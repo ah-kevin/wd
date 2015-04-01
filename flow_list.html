@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8" />
+<title>流量列表</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link href="css/style_flow.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/base.js"></script>
+</head>
+
+<!--回到顶部js-->
+  <script type="text/javascript">
+        $(document).ready(function(){
+            //首先将#back-to-top隐藏
+            $("#get_top").hide();
+        
+            //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>100){
+                    $("#get_top").fadeIn(1500);
+
+                }
+            else
+                {
+                    $("#get_top").fadeOut(1500);
+                }
+            });
+            //当点击跳转链接后，回到页面顶部位置
+            $("#get_top").click(function(){
+                $('body,html').animate({scrollTop:0},1000);
+                return false;
+            });
+        });
+  </script>
+<body>
+<!--页头-->
+<header class="header">
+  <div class="title">
+      <span class="back">
+          <a href="index.html">
+          <img src="images/lcon_back.png" width="58" height="58">
+          </a>
+      </span>
+      <span class="txt">流量列表</span>
+      <span class="info"><img src="images/lcon_head.png" width="52" height="59"></span>
+  </div>
+</header>
+<!--导航-->
+<nav class="nav">
+	<ul>
+    	<li><a href="parts_list.html">配件</a></li>
+        <li><a href="taocan-list.html">合约</a></li>
+        <li><a href="number.html">号码</a></li>
+        <li><a href="shangpin-list.html">宽带</a></li>
+        <li><a href="#" class="on">流量</a></li>
+    </ul>
+</nav>
+<!--详情列表-->
+<section class="main">
+	<dl>
+    	<dt><img src="images/20150326_2.png" width="278" height="304"></dt>
+        <dd>
+        	<span class="info_name">苹果iphone6(1234)64G金色移动联通电信4G</span>
+            <div class="inf0_price"><b>￥4899.00</b><span><img src="images/lcon_cart1.png" width="52" height="45"></span></div>
+            
+        </dd>
+    </dl>
+    <dl>
+    	<dt><img src="images/20150326_3.png" width="278" height="304"></dt>
+        <dd>
+        	<span class="info_name">苹果iphone6(1234)64G金色移动联通电信4G</span>
+            <div class="inf0_price"><b>￥4899.00</b><span><img src="images/lcon_cart1.png" width="52" height="45"></span></div>
+            
+        </dd>
+    </dl>
+    <dl>
+    	<dt><img src="images/20150326_4.png" width="278" height="304"></dt>
+        <dd>
+        	<span class="info_name">苹果iphone6(1234)64G金色移动联通电信4G</span>
+            <div class="inf0_price"><b>￥4899.00</b><span><img src="images/lcon_cart1.png" width="52" height="45"></span></div>
+            
+        </dd>
+    </dl>
+    <dl>
+    	<dt><img src="images/20150326_5.png" width="278" height="304"></dt>
+        <dd>
+        	<span class="info_name">苹果iphone6(1234)64G金色移动联通电信4G</span>
+            <div class="inf0_price"><b>￥4899.00</b><span><img src="images/lcon_cart1.png" width="52" height="45"></span></div>
+            
+        </dd>
+    </dl>
+    <dl>
+    	<dt><img src="images/20150326_2.png" width="278" height="304"></dt>
+        <dd>
+        	<span class="info_name">苹果iphone6(1234)64G金色移动联通电信4G</span>
+            <div class="inf0_price"><b>￥4899.00</b><span><img src="images/lcon_cart1.png" width="52" height="45"></span></div>
+            
+        </dd>
+    </dl>
+    <dl>
+    	<dt><img src="images/20150326_3.png" width="278" height="304"></dt>
+        <dd>
+        	<span class="info_name">苹果iphone6(1234)64G金色移动联通电信4G</span>
+            <div class="inf0_price"><b>￥4899.00</b><span><img src="images/lcon_cart1.png" width="52" height="45"></span></div>
+            
+        </dd>
+    </dl>
+</section>
+<!--页脚菜单-->
+<footer class="footer_flow">
+	<ul>
+    	<li><a href="#">推荐</a></li>
+        <li><a href="#">品牌</a></li>
+        <li><a href="#">热点</a></li>
+        <li><a href="#">价格</a></li>
+        <li><a href="#">屏幕</a></li>
+    </ul>
+</footer>
+<!--返回顶部-->
+<div class="top">
+	<span class="cart_now">
+    	<img src="images/lcon_cart2.png" alt="购物车" width="100%" />
+        <span>6</span>
+    </span>
+    <span class="get_top" id="get_top"></span>
+</div>
+</body>
+</html>

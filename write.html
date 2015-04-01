@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>填写订单</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/write.css">
+     <link href="css/public.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+	  (function(){
+		  var _w = document.documentElement.clientWidth;
+		  var _h = document.documentElement.clientHeight;
+			  var _fontsize = (_w / 640) * 20;
+			  var style = document.createElement('style');
+			  style.type = 'text/css';
+			  style.innerHTML = 'body{font-size:' + _fontsize + 'px}';
+			  document.getElementsByTagName('head').item(0).appendChild(style);
+		  })();
+	</script>
+    <script type="text/ecmascript">
+    	$(function(){
+			$(".fapiao-head ul li .img .yes").hide();
+			$(".fapiao-head ul li .img .no").click(function(){
+				$(this).hide().siblings().show();
+				$(this).parent().parent().siblings().has("div").find(".img .no").show().siblings().hide();
+				});
+		$(".service ul li img").hide();
+			$(".service ul li a").click(function(){
+				$(this).addClass("cur").parent().siblings().find("a").removeClass("cur");
+				$(this).siblings().show();
+				$(this).parent().siblings().find("img").hide();
+				});
+			})
+    </script>
+  </head>
+  <body>
+	<div class="outer-box">
+    	<!--head-->
+    	<div class="header">
+				<img class="to-left" src="images/back.png" />
+				<div class="title">个人定制</div>
+				<img class="to-right" src="images/man.png" />
+				<div class="clear"></div>
+			</div> 
+        <!--content-->
+        <div class="content">
+        	<!--标题-->
+        	<div class="content-title clearfix">
+            	<div class="left"><img src="images/dingdan-money.png" alt="" width="100%" /></div>
+                <span class="left">订单详情</span>
+            </div>
+            <!--4G卡-->
+            <div class="number clearfix">
+            	<div class="card_div"><img class="left" src="images/4G-card.png" alt="" width="15%"/></div>
+            	
+                <div class="Num clearfix left">
+                	<span class="number_hao">【靓号】17712434902</span>
+                    <img class="address_icon" src="images/black-dibiao.png" alt="" width="4%" />
+                    <span class="address">呼和浩特</span>
+                </div>
+            </div>
+            <!--套餐-->
+            <div class="taocan">
+            	<p>靓号预存10.0元   月最低消费10.0元</p>
+                <p>已选3G套餐</p>
+                <p class="gray">国内流量500M，语音通话100分钟，短信0条。</p>
+                <p class="gray">优惠价：59元/月</p>
+                <p style="text-align:right"><span>合计：</span><span style="color:#ffd140; font-size:1.5em;">59元</span><span>/月</span></p>
+            </div>
+            <!--发票-->
+            <div class="fapiao clearfix">
+            	<div class="left"><img src="images/fapiao.png" alt="选择发票信息" width="100%" /></div>
+                <span class="left">选择发票信息</span>
+            </div>
+            <!--发票抬头-->
+            <div class="fapiao-head clearfix">
+                <ul class="clearfix left">
+                	<li class="left">发票抬头：</li>
+                	<li class="left">
+                    	<div class="img left">
+                            <img class="no" src="images/no1.png" alt="未选中" width="100%" /> 
+                            <img class="yes" src="images/yes1.png" alt="选中" width="100%" />
+                        </div>
+                        <span class="left">个人</span>
+                    </li>
+                    <li class="left">
+                        <div class="img left">
+                            <img class="no" src="images/no1.png" alt="未选中" width="100%" /> 
+                            <img class="yes" src="images/yes1.png" alt="选中" width="100%" />
+                        </div>
+                        <span class="left">公司</span>
+                    </li>
+                </ul>
+            </div>
+            <!--发票内容-->
+            <div class="fapiao-head clearfix">
+                <ul class="clearfix left">
+                	<li class="left">发票内容：</li>
+                	<li class="left">
+                    	<div class="img left">
+                            <img class="no" src="images/no1.png" alt="未选中" width="100%" /> 
+                            <img class="yes" src="images/yes1.png" alt="选中" width="100%" />
+                        </div>
+                        <span class="left">通信器材</span>
+                    </li>
+                    <li class="left">
+                        <div class="img left">
+                            <img class="no" src="images/no1.png" alt="未选中" width="100%" /> 
+                            <img class="yes" src="images/yes1.png" alt="选中" width="100%" />
+                        </div>
+                        <span class="left">明细</span>
+                    </li>
+                </ul>
+            </div>
+            <!--卡片-->
+            <div class="fapiao clearfix">
+            	<div class="left"><img src="images/card.png" alt="选择卡片类型" width="100%" /></div>
+                <span class="left">选择卡片类型</span>
+            </div>
+ 			<!--卡片类型-->
+        	<div class="service">
+              <ul class="clearfix">
+                  <li class="left"><a href="#2">3G小卡</a><img src="images/checked.png" width="15%" alt=""/></li>
+                  <li class="left"><a href="#2">3G大卡</a><img src="images/checked.png" width="15%" alt=""/></li>
+                  <li class="left"><a href="#2">4G小卡</a><img src="images/checked.png" width="15%" alt=""/></li>
+                  <li class="left"><a href="#2">4Gano卡</a><img src="images/checked.png" width="15%" alt=""/></li>
+                  <li class="left"><a href="#2">3Gano卡</a><img src="images/checked.png" width="15%" alt=""/></li>
+              </ul>
+       		</div>
+             <!--收货人信息-->
+            <div class="fapiao clearfix">
+            	<div class="left"><img src="images/per-inform.png" alt="选择卡片类型" width="100%" /></div>
+                <span class="left">填写收货人信息</span>
+            </div>
+            <!--收货人信息form表-->
+            <form action="#" method="post">
+            	<p class="clearfix">
+                	<input class="left" type="text" placeholder="请填您的姓名" />
+                    <label class="left change"><a href="#2">修改</a></label>
+                    <label class="pen left"><img src="images/cai-pen.png" alt="修改" width="100%" /></label>
+                    <img class="bord" src="images/taocan-bottom.png" width="75%;" alt="底边"/>
+                </p>
+                <p class="clearfix">
+                	<input class="left" type="text" placeholder="请填您的电话" />
+                    <label class="left change"><a href="#2">修改</a></label>
+                    <label class="pen left"><img src="images/cai-pen.png" alt="修改" width="100%" /></label>
+                    <img class="bord" src="images/taocan-bottom.png" width="75%;" alt="底边"/>
+                </p>
+            </form>
+        </div>
+        <!--bottom-->
+        <div class="bottom clearfix">
+             <a class="yuyue left" href="#2">预约</a>
+             <a class="pay left" href="#2">在线支付</a>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8" />
+<title>订单</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link href="css/style_info.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/base.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+
+            $(".tab_content").hide();
+            $("ul.tabs li:first a").addClass("on").show();
+            $(".tab_content:first").show();
+
+            $("ul.tabs li").click(function() {
+                $("ul.tabs li a").removeClass("on");
+                $(this).find("a").addClass("on");
+                $(".tab_content").hide();
+                var activeTab = $(this).find("a").attr("href");
+                $(activeTab).fadeIn();
+                return false;
+            });
+
+        });
+    </script>
+</head>
+<body>
+<!--页头-->
+<header class="header">
+  <div class="welcome">13522087071欢迎回家！</div>
+  <div class="title">
+  	<span class="name"><b>My store</b> 中国电信微店</span>
+  </div>
+</header>
+<!--左边导航-->
+<nav class="nav">
+  <ul>
+    <li><a href="#"><img src="image/lcon_back.png" width="58" height="58"></a></li>
+    <li><a href="cart.html"><img src="image/lcon_cart.png" width="59" height="56"><span>购物车</span></a></li>
+    <li><a href="#" class="on"><img src="image/lcon_listOn.png" width="50" height="56"><span>订单</span></a></li>
+    <li><a href="order_list.html"><img src="image/lcon_order.png" width="50" height="56"><span>预约单</span></a></li>
+    <li><a href="collect.html"><img src="image/lcon_collect.png" width="62" height="58"><span>收藏店铺</span></a></li>
+  </ul>
+  <div class="more"><a href="#"><span><img src="image/lcon_more.png" width="56" height="56"></span></a></div>
+</nav>
+<!--右边订单详情-->
+<section class="main">
+	<ul class="liseMenu tabs">
+    	<li ><a href="#tab1">未完成订单</a></li>
+        <li><a href="#tab4">已完成订单</a></li>
+    </ul>
+	<dl id="tab1" class="order_details tab_content" style="display: block">
+    	<dt>
+        	<span class="logo"><img src="image/huaweiLogo.png" width="69" height="69"></span><span class="name"><b >My store</b> 中国电信微店</span>
+        </dt>
+        <dd>
+        	<div class="img"><img src="image/20150326_1.png" width="205" height="245"></div>
+            <div class="list_txt">
+            	<span class="list_name">Lenovo/联想 S898T 1300万像素 智能四核TD手机</span>
+                <span list_price>¥588</span>
+            </div>
+        </dd>
+      <dd class="border"><span>共1件商品，实付 <b>588</b> 元。</span><a href="#">删除订单</a><div class="quxian"><img src="image/borderBg.png" width="592" height="12"></div></dd>
+    </dl>
+    <dl id="tab4" class="order_details tab_content" style="display: none;">
+    	<dt>
+        	<span class="logo"><img src="image/huaweiLogo.png" width="69" height="69"></span><span class="name"><b >My store</b> 中国电信微店</span>
+        </dt>
+        <dd>
+        	<div class="img"><img src="image/20150326_1.png" width="205" height="245"></div>
+            <div class="list_txt">
+            	<span class="list_name">Lenovo/联想 S898T 1300万像素 智能四核TD手机</span>
+                <span list_price>¥111</span>
+            </div>
+        </dd>
+      <dd class="border"><span>共1件商品，实付 <b>588</b> 元。</span><a href="#">删除订单</a><div class="quxian"><img src="image/borderBg.png" width="592" height="12"></div></dd>
+    </dl>
+</section>
+</body>
+</html>

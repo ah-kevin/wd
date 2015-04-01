@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8" />
+<title>微店首页</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link	href="css/animations.css"	rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/TouchSlide.1.1.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+
+<script type="text/javascript" src="js/touch.js"></script>
+
+<script>
+	(function(){
+		var _w = document.documentElement.clientWidth;
+		var _fontsize = (_w / 640) * 20;
+		var style = document.createElement('style');
+		style.type = 'text/css';
+		style.innerHTML = 'body{font-size:' + _fontsize + 'px}';
+		document.getElementsByTagName('head').item(0).appendChild(style);
+		
+	})();
+</script>
+
+<script>
+	 $(document).ready(function(){
+		 	$(".show").on('tap', function(ev){
+				 $(".show").addClass('hide');
+			   $(".all").removeClass('hide');
+			    $(".all").addClass('pt-page-moveFromLeft');
+			 
+			});
+			
+			$(".close").on('tap', function(ev){
+				 $(".all").addClass('hide');
+			   $(".show").removeClass('hide');
+			}); 	
+	 	});
+</script>
+
+
+</head>
+
+<body>
+<div class="header">
+	 <img class="to-left" src="images/Left_1.png" />
+   <div class="title">电信微店</div>
+   
+</div>
+<div class="banner"><img src="images/banner.png" width="100%"/></div>
+<div class="banner-s"><img src="images/circelpic.png" width="25%"/></div>
+<p class="dian">我的嘿店<img src="images/dingwei.png" width="6%" /></p>
+
+<p class="content">请选择我的嘿店，我的嘿店威武，我的店霸气，我的店最好！</p>
+<div class="box">
+	
+	<div class="box-l">
+        
+         <div class="show"><img src="images/jia.png" width="45%"/></div>
+        
+      </div>  
+     <div class="box-l all hide">
+         <div class="radiobg"><img src="images/radiobg.png" width="100%"/></div>
+         <div class="close"><img src="images/close.png" width="45%"/></div>
+         <div class="huobi"><img src="images/pic1.png" width="55%"/></div>
+         <div class="phone"><img src="images/phone2.png" width="55%"/></div>
+         <div class="pingluo"><img src="images/pic02.png" width="55%"/></div>
+         <div class="sou"><img src="images/sou.png" width="55%"/></div>
+      </div>   
+      <div class="box-r">最近的店铺距您只有201米</div>
+</div>
+   
+ <div id="focus" class="focus">
+        <div class="hd">
+          <ul></ul>
+        </div>
+        <div class="bd">
+          <ul>
+              <li><a href="#"><img src="images/pic03.png" /></a></li>
+              <li><a href="#"><img src="images/pic04.png" /></a></li>
+              
+          </ul>
+        </div>
+</div>
+<div class="clear"></div>
+<script type="text/javascript">
+        TouchSlide({ 
+          slideCell:"#focus",
+          titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+          mainCell:".bd ul", 
+          effect:"leftLoop", 
+          autoPlay:true,//自动播放
+          autoPage:true //自动分页
+        });
+  </script>
+
+<div class="title1" >镇店之宝</div><br>
+
+<div class="hhdd">
+          <ul>
+              <li><a href="#"><img src="images/iphone5s.png" width="60%"/></a><div class="orange">iPhone 5S</div></li>
+              <li><a href="#"><img src="images/mate7.png" width="60%"/></a><div class="orange">Ascend Mate7</div></li>
+              <li><a href="#"><img src="images/meilan.png" width="60%"/></a><div class="orange">魅蓝note</div></li>
+              
+          </ul>
+</div>
+<div class="clear"></div>
+<div class="title2" >所有商品</div><br>
+<div class="conBL">
+            <dl>
+              <dt><a href="#"><img src="images/moble01.png" /></a></dt>
+                <dd class="pro_name">LUOYA 手机钢化膜贴膜</dd>
+                <dd>华为mate7 弧边</dd>  
+                <dd><span>￥35.00</span></dd>
+            </dl>
+ </div>
+ <div class="conBL">
+            <dl>
+              <dt><a href="#"><img src="images/mobile02.png" /></a></dt>
+                <dd class="pro_name">卡苏洛 防爆膜/钢化玻璃膜</dd>
+                <dd>三星S5 G9006V/G9008V手机</dd>  
+                <dd><span>￥28.00</span></dd>
+            </dl>
+ </div>
+ <div class="conBL">
+            <dl>
+              <dt><a href="#"><img src="images/mobile03.png" /></a></dt>
+                <dd class="pro_name">ESK 钢化玻璃膜 贴膜系</dd>
+                <dd>魅族MX3</dd>  
+                <dd><span>￥30.00</span></dd>
+            </dl>
+ </div>
+ <div class="clear"></div>
+ 
+<div class="title1" >镇店之宝</div><br>
+
+<div class="nothome">
+        <ul>
+            <li>
+              <div class="pic"><img src="images/ke01.png?v=1" style="width: 61%;" /></div>	
+              <div class="name">冰玉磨砂手机壳</div>	
+              <div class="detail">vivo X3t粉色</div>	
+            </li>
+            <li>
+            	<div class="pic"><img src="images/ke02.png?v=1" /></div>	
+              <div class="name">关公手机保护套</div>	
+              <div class="detail">ip4/4s</div>	
+            </li>
+            <li>
+            	<div class="pic"><img src="images/ke03.png?v=1"  style="width: 67.5%;"/></div>	
+              <div class="name">蝴蝶水钻手机壳</div>	
+              <div class="detail">当多功能毯子</div>	
+            </li>
+            
+        </ul> 
+ </div>
+
+<div class="menu">
+    <div class="img-block fl top">
+     <a class="link" href="goods_list.html">手机</a>
+   	</div>
+   	 <div style="height:1px;"></div>
+   	<div class="img-block fl">
+     <a class="link" href="parts_list.html">配件</a>
+   	</div>
+   	 <div style="height:1px;"></div>
+   	<div class="img-block fl">
+     <a class="link" href="taocan-list.html">合约</a>
+   	</div>
+   	 <div style="height:1px;"></div>
+   	<div class="img-block fl">
+     <a class="link" href="shangpin-list.html">宽带</a>
+   	</div>
+   	 <div style="height:1px;"></div>
+   	<div class="img-block fl">
+     <a class="link" href="number.html">号码</a>
+   	</div>
+   	 <div style="height:1px;"></div>
+   	<div class="img-block fl">
+     <a class="link" href="flow_list.html">流量</a>
+   	</div>
+   	 <div style="height:1px;"></div>
+   	<div class="img-block fl bottom">
+     <a class="link" href="#">其他</a>
+   	</div>
+    
+   </div>
+</div>
+
+
+
+</body>
+</html>

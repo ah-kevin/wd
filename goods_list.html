@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>商品列表</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/style_flow.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.fly.min.js"></script>
+    <script src="js/requestAnimationFrame.js"></script>
+    <script src="js/base.js"></script>
+    <style>
+        .u-flyer {
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            position: fixed;
+            z-index: 9999;
+        }
+    </style>
+</head>
+
+<!--回到顶部js-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        //首先将#back-to-top隐藏
+        $("#get_top").hide();
+
+        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 100) {
+                $("#get_top").fadeIn(1500);
+
+            }
+            else {
+                $("#get_top").fadeOut(1500);
+            }
+        });
+        //当点击跳转链接后，回到页面顶部位置
+        $("#get_top").click(function () {
+            $('body,html').animate({scrollTop: 0}, 1000);
+            return false;
+        });
+    });
+</script>
+<body>
+<script>
+    $(function () {
+        var offset = $("#end").offset();
+        $(".addcar").click(function (event) {
+            var addcar = $(this);
+            var img = addcar.parents('dd').siblings('li').children('div.goods_show').find('img').attr('src');
+
+            console.log(img);
+            var flyer = $('<img class="u-flyer" src="' + img + '">');
+            flyer.fly({
+                start: {
+                    left: event.clientX-120,
+                    top: event.clientY-110
+                },
+                end: {
+                    left: offset.left + 10,
+                    top: offset.top + 10,
+                    width: 0,
+                    height: 0
+                },
+                onEnd: function () {
+                    var num = $("#msg").text();
+                    num++;
+                    $("#msg").text(num);
+                    this.destory();
+                }
+            });
+        });
+
+    });
+</script>
+<!--页头-->
+<header class="header">
+    <div class="title">
+        <a href="index.html">
+            <span class="back"><img src="images/lcon_back.png" width="58" height="58"></span>
+        </a>
+        <span class="txt">商品列表</span>
+        <span class="info">
+               <a href="admin/cart.html">
+                   <img src="images/lcon_head.png" width="52" height="59">
+                   </a>
+        </span>
+    </div>
+</header>
+<!--导航-->
+<nav class="nav">
+    <ul>
+        <li><a href="#" class="on">手机</a></li>
+        <li><a href="parts_list.html">配件</a></li>
+        <li><a href="taocan-list.html">合约</a></li>
+        <li><a href="number.html">号码</a></li>
+        <li><a href="shangpin-list.html">宽带</a></li>
+    </ul>
+</nav>
+<!--详情列表-->
+<section class="main width-all">
+    <ul class="goods_list">
+        <dl>
+        <li>
+            <div class="price"><img src="images/price.png" width="217" height="56"></div>
+            <div class="goods_show"><img src="images/20150326_6.png" width="581" height="309"></div>
+
+        </li>
+
+            <dt>
+                <span class="goods_name">【天翼4G】iPhone6 PLUS 64G 金色4G单卡5.5寸 64 位A8处理器 M8协处理器</span>
+                <span class="goods_price">￥5800.00</span>
+            <div style="clear:both"></div>
+            </dt>
+
+            <dd>
+                <span class="addcar"><img src="images/lcon_cart1.png" width="90%" /></span>
+            </dd>
+        </dl>
+        <dl>
+        <li>
+            <div class="price"><img src="images/price.png" width="217" height="56"></div>
+            <div class="goods_show"><img src="images/20150326_7.png" width="581" height="309"></div>
+
+        </li>
+
+            <dt>
+                <span class="goods_name">【天翼4G】iPhone6 PLUS 64G 金色4G单卡5.5寸 64 位A8处理器 M8协处理器</span>
+                <span class="goods_price">￥5800.00</span>
+            <div style="clear:both"></div>
+            </dt>
+
+            <dd><span class="addcar"><img src="images/lcon_cart1.png" width="90%" /></span></dd>
+        </dl>
+        <dl>
+        <li>
+            <div class="price"><img src="images/price.png" width="217" height="56"></div>
+            <div class="goods_show"><img src="images/20150326_6.png" width="581" height="309"></div>
+
+        </li>
+
+            <dt>
+                <span class="goods_name">【天翼4G】iPhone6 PLUS 64G 金色4G单卡5.5寸 64 位A8处理器 M8协处理器</span>
+                <span class="goods_price">￥5800.00</span>
+            <div style="clear:both"></div>
+            </dt>
+
+            <dd><span class="addcar"><img src="images/lcon_cart1.png" width="90%" /></span></dd>
+        </dl>
+    </ul>
+</section>
+<div class="empty" style=" float:left; width:100%; height:15em;"></div>
+<!--页脚菜单-->
+<footer class="footer_flow">
+    <ul>
+        <li><a href="#">推荐</a></li>
+        <li><a href="#">品牌</a></li>
+        <li><a href="#">热点</a></li>
+        <li><a href="#">价格</a></li>
+        <li><a href="#">屏幕</a></li>
+    </ul>
+</footer>
+
+<!--返回顶部-->
+<div class="top">
+    <span class="get_top" id="get_top"></span>
+	<span class="cart_now">
+    	<img src="images/lcon_cart2.png" alt="购物车" width="100%" id="end" />
+        <span id="msg">6</span>
+    </span>
+
+</div>
+</body>
+</html>

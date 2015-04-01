@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>套餐选择</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/taocan-list.css">
+     <link href="css/public.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+	  (function(){
+		  var _w = document.documentElement.clientWidth;
+		  var _h = document.documentElement.clientHeight;
+			  var _fontsize = (_w / 640) * 20;
+			  var style = document.createElement('style');
+			  style.type = 'text/css';
+			  style.innerHTML = 'body{font-size:' + _fontsize + 'px}';
+			  document.getElementsByTagName('head').item(0).appendChild(style);
+			  
+		  })();
+	</script>
+    <script type="text/ecmascript">
+    	$(function(){
+			$(".service ul li img").hide();
+			$(".service ul li a").click(function(){
+				$(this).addClass("cur").parent().siblings().find("a").removeClass("cur");
+				$(this).siblings().show();
+				$(this).parent().siblings().find("img").hide();
+				});
+			})
+    </script>
+    <script type="text/javascript">
+    	$(function(){
+			var i = 0;
+			$(".content .left-JT").click(function(){
+				i++;
+				$(".content .banner .banner-img").css("left",-i*100+"%");
+				});
+			})
+    </script>
+  </head>
+  <body>
+	<div class="outer-box">
+    	<!--head-->
+    	<div class="header">
+			<a href="index.html">
+				<img class="to-left" src="images/back.png" />
+			</a>
+				<div class="title">合约</div>
+			<a href="admin/cart.html">
+				<img class="to-right" src="images/man.png" />
+				</a>
+				<div class="clear"></div>
+			</div> 
+        <!--content-->
+        <div class="content">
+        	<!--导航-->
+        	<nav>
+				  	<ul class="clearfix">
+				      	<li class="left"><a href="goods_list.html" target="_blank">手机</a></li>
+				          <li class="left"><a href="parts_list.html" target="_blank">配件</a></li>
+				          <li class="left"><a class="cur" href="#">合约</a></li>
+				          <li class="left"><a href="number.html" target="_blank">号码</a></li>
+				          <li class="left"><a href="shangpin-list.html" target="_blank">宽带</a></li>
+				      </ul>
+				  </nav>
+            <!--套餐-->
+            <div class="taocan clearfix ">
+            	<div class="left">
+                	<p class="name">乐享4G套餐</p>
+                    <p class="con">国内流量+语音通话</p>
+                </div>
+                <div class="right"><a href="taocan_detail.html" target="_blank" style="z-index:999;">更多套餐>></a></div>
+                <img src="images/taocan-bottom.png" width="100%;" alt=""/>
+            </div>
+            <div class="taocan clearfix ">
+            	<div class="left">
+                	<p class="name">飞Young</p>
+                    <p class="con">纯流量卡</p>
+                </div>
+                <div class="right"><a href="taocan-details.html" target="_blank" style="z-index:999;">更多套餐>></a></div>
+                <img src="images/taocan-bottom.png" width="100%;" alt=""/>
+            </div>
+            <div class="taocan clearfix ">
+            	<div class="left">
+                	<p class="name">个人定制</p>
+                    <p class="con">私人订制，您的套餐</p>
+                </div>
+                <div class="right"><a href="dinzhi.html" target="_blank" style="z-index:999;">更多套餐>></a></div>
+                <img src="images/taocan-bottom.png" width="100%;" alt=""/>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

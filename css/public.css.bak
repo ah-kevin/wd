@@ -1,0 +1,45 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { padding: 0; border: 0; outline: 0; background: none; border: none; margin-bottom: 0; margin-right: 0; margin-top: 0;}
+html { background:#efefef;  font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; line-height: 3em; font-family:"微软雅黑";}
+ol, ul { list-style:none }
+table { border-collapse:collapse; border-spacing:0 }
+body, a { text-decoration:none; color:#272727;}
+ul,ol{ margin:0; padding:0;}
+li{ margin:0; padding:0; list-style:none;}
+div {text-align:left;}
+.clear{ clear:both;}
+.clearfloat { clear:both; height:0; font-size: 1px; line-height: 0px;}
+.height2em{ width:100%; height:2em;}
+.height6em{ width:100%; height:6em;}
+
+/*页头*/
+#head{width:100%;margin:0px auto;}
+#head .logo{ width: 100%; background:#fff;}
+#head .logo img{ float:left; width: 50%; padding:1em 0; margin-left:2%;}
+#head .logo .button{ float:left; border-radius: 8px; border:1px solid #6EC536; margin:1em 0 0 5%; background:#6fc537; width:28%; line-height:2.2em; text-align:center;  color:#fff;}
+#head .logo .button a{ display:block; height:100%; width:100%; color:#fff;}
+
+#head .title{ width: 100%; height: 3.3em; background: #fff; border-bottom:1px solid #d8d8d8;}
+#head .back{height: 3em;top: 0.3em;left: 3%;position: absolute; }
+#head .back img{width: 75%;}
+#head .myinfo{ height: 3em;top: 0.3em;right: 3%;position: absolute; } 
+#head .myinfo img{width: 75%;} 
+
+
+#head .title #pre{width:20%; text-indent:-9999em; display:block; float:left;}
+#head .title h1{float: left; overflow:hidden; width: 100%; background: url(../images/up.png) no-repeat 5% center; text-align: center; height: 2.5em; line-height: 2.5em; font-size: 1.3em; font-weight: normal; }
+#head .line{ width:100%; height:1px; border-bottom:1px solid #d8d8d8; margin:0 auto;}
+
+/*页脚*/
+#foot{width:100%; background:#efefef; padding-top:2em;}
+#foot .text{width:85%; border-top:1px solid #989898; margin:0 auto; padding:1.2em 0 1.8em 0;}
+#foot .text span{ display: block; font-size: 0.9em; text-align: center;line-height: 180%;}
+
+ .button {
+width: 100%;
+
+bottom: 0%;
+text-align: center;
+margin: 40px auto 0 auto;
+background: #fed04f;
+}

@@ -1,0 +1,80 @@
+﻿@charset "utf-8";
+/* CSS Document */ 
+* { margin:0; padding:0; }
+html, body, ul, ol, li, dl, dt, dd, h1, h2, h3, form, p, img { margin:0; padding:0; }
+html, body { background:#efefef; color:#272727; line-height:22px; font:100 12px/1.5 '微软雅黑',Arial, Helvetica, sans-serif; }
+ul li, li {list-style:none;}
+select, img { vertical-align:middle; }
+img { border:none; }
+table { padding:0px; margin:0px; }
+a { font-size:14px; text-align:center; color:#333; text-decoration:none; }
+a:hover { color:#333; text-decoration: none; }
+
+/**********主题部分**********/
+/*=========================================== personalCustomizationPackage ===========================================*/
+.topNav,.main,.package,.progressBar,.discount,.ad { width:100%; display:block; overflow:hidden; }
+.dunit01,.dunit02,.dunit03 { width:100%; }
+.input { width:50%; height:1.4em;  line-height:1.4em;  border:#c4c4c4 solid 1px; background-color:#fff;margin-top: 2px; }
+.input input { width:100%;  border:none; background:none;  text-align:center; height: 100%;}
+a.green { width:100%; height:36px; line-height:36px; border-radius:10px; display:block; overflow:hidden; text-align:center; color:#fff; font-size:16px; background-color:#6fc537; margin:15px 0; }
+a.icon_backTop { width:45px; height:45px; display:block; overflow:hidden; position:fixed; bottom:10px; right:10px; z-index:9999; background:url(../images/icon_backTop.png) no-repeat; }
+
+.topNav { border-bottom:#e1e1e1 solid 2px; position: relative; }
+.topNav .topMenu { width:7%; height:100%;  position: absolute; top: 8px; left: 8px; }
+.topNav .topMenu img { width:85%; }
+.topNav .textMenu { width:7%; float:left; padding:8px;  height:100%;  }
+.topNav .logo { width:65%; margin:0 auto; padding:6px 8px; }
+.topNav h2 { font-size:18px; line-height:40px; text-align:center; font-weight:100;  position:absolute; top:50%; left:50%; margin-top:-20px; margin-left:-50px; }
+
+.main .title {color: #a5a5a5;  font-size:1em;text-align: center; }
+.package ul li {padding:15px 10px 0px; display:block; overflow:hidden; font-size:1.2em; }
+.dunit01 td { }
+.dunit01 td img { vertical-align:middle; margin-top:-2px; width: 20%;}
+.dunit01 .inner01,.dunit01 .inner03 { width:30%;  }
+.dunit01 .inner01 {  text-align:left;  }
+.dunit01 .inner02 { width:37%; }
+.dunit01 .inner03 { text-align:right; }
+.dunit01 .inner03 span { color:#ffd140; font-size:16px; font-weight:bold;  line-height:28px;}
+.dunit01 .time { margin:0 auto; display:block; overflow:hidden;  line-height:28px;}
+.dunit01 .time p { float:left; margin-left:5px;  }
+.dunit01 .input { float:left; }
+.dunit01 .inner05 { text-align:center; color: #a5a5a5; }
+.dunit01 .inner06 img { float:right;  }
+
+.progressBar { height:2.5em; position:relative; }
+.progressBar b { width: 60px;
+height: 22px;
+background: url(../images/huakuai.png) no-repeat top center;
+background-size: 35%;
+position: absolute;
+top: 8px;
+display: block;
+overflow: hidden;
+margin-left: -30px;
+color: #FFD140;
+font-size: 16px;
+line-height: 22px;
+font-weight: bold;
+text-align: center;
+padding-top: 40px;}
+.progressBar .bg { width:100%; height:9px; background-color:#d6d6d6; border-radius:9px; margin-top:17px; }
+.progressBar .bg .con { height:9px; background-color:#ffd140; border-radius:9px; }
+.progressBar span,.progressBar font { position:absolute; bottom:0; line-height:22px; font-size:16px; }
+.progressBar span { left:0; }
+.progressBar font { right:0; }
+
+.textPrompt { padding:10px 10px;  line-height: 1.6em; color:#a5a5a5 }
+
+.floatDiv { border-top:#bababa solid 1px; padding:18px 10px; position:relative; }
+.floatDiv i { width:50px; height:45px; background:url(../images/icon_jb.png) no-repeat; position:absolute; top:0; right:0; }
+.floatDiv h2 { font-size:16px; line-height:30px; padding-bottom:15px; }
+
+.dunit02 td { font-size:14px; text-align:left; }
+.dunit02 td img { width:15%; }
+.dunit02 td span { font-size:12px; }
+.dunit02 .inner02 { text-align:center; }
+.dunit02 .inner01 { text-align:left; }
+.dunit02 .inner03 { text-align:right; }
+
+.xiaotiesi{ padding-left:10px; color:#ffd140; line-height: 1em; font-size: 1.5em;}
+

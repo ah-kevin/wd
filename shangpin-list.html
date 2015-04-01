@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>我的嘿店</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/shangpin-list.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+	  (function(){
+		  var _w = document.documentElement.clientWidth;
+		  var _h = document.documentElement.clientHeight;
+			  var _fontsize = (_w / 640) * 20;
+			  var style = document.createElement('style');
+			  style.type = 'text/css';
+			  style.innerHTML = 'body{font-size:' + _fontsize + 'px}';
+			  document.getElementsByTagName('head').item(0).appendChild(style);
+			  
+		  })();
+	</script>
+    <script type="text/javascript">
+    	$(function(){
+			$(".service ul li img").hide();
+			$(".service ul li a").click(function(){
+				$(this).addClass("cur").parent().siblings().find("a").removeClass("cur");
+				$(this).siblings().show();
+				$(this).parent().siblings().find("img").hide();
+				});
+			var i = 0;
+			$(".banner .left-JT").click(function(){
+				i++;
+				if(i>3){i=3;}
+				$(".content .banner-img").css("margin-left",-i*80+"%");
+			
+				});
+			$(".banner .right-JT").click(function(){
+				i--;
+				if(i<0){i=0;}
+				$(".content .banner-img").css("margin-left",-i*80+"%");
+				
+				});
+		
+			})
+    </script>
+  </head>
+  <body>
+	<div class="outer-box">
+    	<!--head-->
+    	<header class="clearfix">
+        	<a class="left return" href="index.html" title="返回"><img src="images/L-return.png" alt="" width="100%" /></a>
+            <div class="left">商品列表</div>
+            <a class="left personal" href="admin/cart.html" title="个人中心"><img src="images/personal.png" alt="" width="100%" /></a>
+        </header>
+        <!--content-->
+        <div class="content">
+        	<!--导航-->
+        	<nav>
+            	<ul class="clearfix">
+                	<li class="left"><a href="goods_list.html" target="_blank">手机</a></li>
+                    <li class="left"><a href="parts_details.html" target="_blank">配件</a></li>
+                    <li class="left"><a href="taocan-list.html" target="_blank">合约</a></li>
+                    <li class="left"><a href="number.html" target="_blank">号码</a></li>
+                    <li class="left"><a class="cur" href="#">宽带</a></li>
+                </ul>
+            </nav>
+            <!--banner-->
+            <div class="banner">
+            	<div class="banner-img clearfix">
+                	<img class="left" src="images/banner-img1.png" alt="img1" width="15%" />
+                    <img class="left" src="images/banner-img1.png" alt="img1" width="15%" />
+                    <img class="left" src="images/banner-img1.png" alt="img1" width="15%" />
+                    <img class="left" src="images/banner-img1.png" alt="img1" width="15%" />
+                </div>
+                <img class="left-JT" src="images/left-JT.png" alt="左箭头" width="2%" style="cursor:pointer;" />
+                <img class="right-JT" src="images/right-JT.png" alt="左箭头" width="2%" style="cursor:pointer;" />
+            </div>
+            <!--form-->
+            <form action="#" method="get">
+            	<p class="clearfix"><label class="left"><img src="images/custom.png" width="100%" alt="用户名" /></label><input class="left" type="text" placeholder="请输入您用户名" /></p>
+                <p class="clearfix"><label class="left pho"><img src="images/tel.png" width="100%" alt="用户名" /></label><input class="left" type="text" placeholder="请输入您的手机号" /></p>
+            </form>
+            <!--服务-->
+            <div class="service">
+                <ul class="clearfix">
+                    <li class="left"><a>新装</a><img src="images/checked.png" width="15%" alt=""/></li>
+                    <li class="left"><a>提速</a><img src="images/checked.png" width="15%" alt=""/></li>
+                    <li class="left"><a>续约</a><img src="images/checked.png" width="15%" alt=""/></li>
+                    <li class="left"><a>报障</a><img src="images/checked.png" width="15%" alt=""/></li>
+                </ul>
+                <p>请留下你的姓名和电话号码，我们将在24小时内与您联系！</p>
+            </div>
+            <!--确定-->
+            <a class="sure" href="#2">确定</a>
+        </div>
+    </div>
+  </body>
+</html>

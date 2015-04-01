@@ -1,0 +1,35 @@
+/* CSS Document */
+/*outer-box*/
+.outer-box{ width:100%; min-width:320px; margin:0 auto;}
+/*header*/
+header{ width:100%; height:auto; padding:1em 0; background:#ffd140;}
+.return,.personal{ width:6%; margin-left:0.8em;}
+header div{ width:80%; text-align:center; font-size:2em; color:#4c4c4d;}
+
+/*content*/
+.content{ width:100%; height:100%; font-size:1.5em;}
+.content nav,.content nav ul{ width:100%;}
+.content nav ul li{ width:20%; text-align:center;}
+.content nav ul li a{ display:block; color:#888; line-height:3em; font-size:1em; border-bottom:0.25em solid #e5e5e5;}
+.content nav ul li a.cur,.content nav ul li a:hover{ color:#2e2e2e; border-bottom:0.25em solid #5e5e5e;}
+
+.content .banner{ position:relative; width:100%; margin:3em auto; overflow:hidden;}
+.content .banner-img{ width:400%;}
+.content .banner-img img{ margin-left:5%;}
+.content .banner .left-JT,.content .banner .right-JT{ position:absolute;}
+.content .banner .left-JT{ left:4em; top:50%; z-index:999;}
+.content .banner .right-JT{ right:4em; top:50%; z-index:999;}
+
+.content form{ widows:100%;}
+.content form p{ width:76%; margin:0 auto 2em;}
+.content form p label{ width:8%;}
+.content form p input{ width:80%; margin-left:0.5em; font-size:1.5em; border:none; border-bottom:1px solid #000; outline:none; color:#888;}
+
+.content .service,.content .service ul{ width:100%;}
+.service ul li{ position:relative; width:20%; margin-left:4%;}
+.service ul li a{ display:block; width:100%; text-align:center; color:#424242; background:#f4f4f4; border:0.1em solid #c6c6c6; padding:0.8em 0;}
+.service ul li a.cur{ background:none; border:0.1em solid #ffd44b;}
+.service ul li img{ position:absolute; right:-0.1em; top:0;}
+.service p{ width:80%; text-indent:2em; margin:1em auto 5em; font-size:1em; color:#424242;}
+
+.content .sure{ position:fixed; left:0; bottom:0; width:100%; text-align:center; color:#424242; font-size:1.5em; background:#ffd140; padding:0.5em 0; margin-top:1em;}

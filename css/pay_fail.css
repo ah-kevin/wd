@@ -1,0 +1,42 @@
+
+
+/* ÂòÊÖ»úÖ§¸¶Ò³ */
+#main .pay{
+height: 10em;
+background-color: #fff;
+background-size: 30%;
+text-align: center;}
+
+#main .kulian{
+height: 4em;
+background-color: #fff;
+background-size: 30%;
+text-align: center;
+padding-top:2em;
+}
+
+#main .kulian img{
+ 	width:18%;
+ }
+
+
+#main .pay span{ color:#f06751;}
+#main .pay_tit{ width: 100%;
+height: 2em;
+margin-top: 20px;
+line-height: 2em;
+text-indent: 0.7em;
+font-weight: bold;}
+#main .way{margin: 10px auto 0 auto;
+padding-bottom: 20px;
+font-size: 0.9em;}
+#main .way .text{ text-indent:1em; text-align:left;}
+#main .way ul li{ width:95%; border-bottom:2px solid #EFEFEF; margin:0 auto;}
+#main .way ul li a{ display:block; width:100%; height:60px; line-height:60px; text-indent:40%; background:url(../images/graycirule.jpg) 95% 50% no-repeat;}
+#main .way ul li.thison4 a{ height:50px;}
+#main .way ul li.height a{background:url(../images/ok.png) 95% 50% no-repeat;}
+
+#main .conway{width:85%;height:180px; background:#fff;margin:0px auto;border:1px solid #fff; border-radius:10px;}
+#main .conway ul li.thison{ background:url(../images/yizhifu.jpg) left center no-repeat;}
+#main .conway ul li.thison2{ background:url(../images/zhifubao.jpg) left center no-repeat;}
+#main .conway ul li.thison3{ background: url(../images/weixin.png) left center no-repeat;}

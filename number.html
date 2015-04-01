@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.1//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile11.dtd">
+
+<head>
+<meta charset="utf-8" />
+<title>中国电信</title>
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link href="css/wb.css" rel="stylesheet" type="text/css" />
+
+<link href="css/public.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script>
+$(function(){
+	$('.drop_down .menu ul li:even').css('background-color','#dfdfdf');
+	$('.drop_down .menu ul li:odd').css('background-color','#fff');
+	$('.drop_down .menu ul').hide();
+	
+	$('.drop_down .menu ').click(function(){
+		var ul_index=$('.drop_down .menu ').index(this);
+		$(this).find('span').toggleClass('show');
+		$('.drop_down .menu ul').eq(ul_index).slideToggle();
+		var oli=$('.drop_down .menu ul').eq(ul_index).find('li');
+		oli.click(function(){
+			$('.drop_down .menu p').eq(ul_index).html($(this).html())
+			$('.drop_down .menu ul').eq(ul_index).stop(ture).slideUp();
+			$('.drop_down .menu span').eq(ul_index).removeClass('show');
+			})
+
+		})
+});
+</script>
+<script>
+$(function(){
+	$('.haoma .single').click(function(){
+		var index=$('.haoma .single').index(this);
+		//$(this).css('border-left','1px solid #F88B00');
+		$(this).addClass('active').siblings('.single').removeClass('active');
+		$(".num_info").removeClass('hide');
+	});
+});
+
+$(function(){
+	$('.drop_down .menu').click(function(){
+		var index=$('.drop_down .menu').index(this);
+		$(this).addClass('white').siblings('.menu').removeClass('white');
+	});
+});
+
+</script>
+<script>
+$(function(){
+	$(".cent33 ul li").click(function(){
+		$(this).addClass("height").siblings().removeClass("height");
+	});
+});
+</script>
+<script>
+$(function(){
+	$(".cent50 ul li").click(function(){
+		$(this).addClass("height").siblings().removeClass("height");
+	});
+});
+</script>
+<script>
+$(window).scroll(function(){
+		if ($(window).scrollTop()>100){
+			$(".icon_backTop").fadeIn(1500);
+		}
+		else
+		{
+			$(".icon_backTop").fadeOut(1500);
+		}
+	});
+function goTop(){
+			$('body,html').animate({scrollTop:0},1000);
+		}
+		
+function search(){
+	alert("查询");
+}
+</script>
+</head>
+<body>
+<div class="background">
+ 	<div class="header">
+		<a href="index.html">
+		<img class="to-left" src="images/back.png" />
+			</a>
+		<div class="title">号码列表</div>
+		<a href="admin/cart.html">
+		<img class="to-right" src="images/man.png" />
+			</a>
+		<div class="clear"></div>
+	</div> 
+	<nav>
+  	<ul class="clearfix">
+      	<li class="left"><a href="goods_list.html" target="_blank">手机</a></li>
+          <li class="left"><a href="parts_details.html" target="_blank">配件</a></li>
+          <li class="left"><a href="taocan-list.html" target="_blank">合约</a></li>
+          <li class="left"><a class="cur" href="#2">号码</a></li>
+          <li class="left"><a href="shangpin-list.html" target="_blank">宽带</a></li>
+      </ul>
+  </nav>
+	
+  <div class="num_bck">
+    <div class="skl">呼和浩特<a href="#"><img src="images/haoma_arrow_d.png" /></a> 
+      <!--下拉部分已隐藏-->
+      <!--&lt;!&ndash;-->
+      <!--<div class="skl_dd">-->
+        <!--<a href="#">aaaaaa</a>-->
+      <!--</div>-->
+      <!--&ndash;&gt; -->
+    </div>
+    <div class="skr">
+    	<a class="iw" href="#" ><img src="images/search.png" onclick="search()"/></a>
+      <input type="text" value="" placeholder="输入您想要的尾号"/>
+      </div>
+    <div class="clear"></div>
+  </div>
+  <div class="drop_down">
+    <div class="menu">
+       号段
+    </div>
+    <div class="menu">
+       预存话费
+    </div>
+    <div class="menu">
+      情侣号码
+    </div>
+    <div class="menu">
+     0元靓号
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div id="haoma" class="haoma">
+	<div class="single rightline" style="border-right:1px solid #d8d8d8;">
+		<img src="images/add_ico.png">
+		<p>133 0128 <span class="f_red">1314</span></p><p class="font_s">一生一世</p>
+		<div class="star"><image src="images/star1.png" /></div>
+	</div>
+	 
+	<div class="single">
+		<img src="images/add_ico.png"> 
+		<p>133 0128 <span class="f_red">1314</span></p><p class="font_s">一生一世</p>
+		<div class="star"><image src="images/star1.png" /></div>
+	</div>
+	
+	<div class="single rightline" style="border-right:1px solid #d8d8d8;">
+		<img src="images/add_ico.png"> 
+		<p>133 0128 <span class="f_red">5687</span></p><p class="font_s">预存1000元</p>
+	  <div class="star"><image src="images/star1.png" /></div>
+	</div>
+	
+	<div class="single">
+    	<img src="images/add_ico.png"> 
+		<p>133 0128 <span class="f_red">5687</span></p><p class="font_s">预存1000元</p>
+		<div class="star"><image src="images/star1.png" /></div>
+	</div>
+	
+    <div class="single rightline" style="border-right:1px solid #d8d8d8;">
+    	<img src="images/add_ico.png"> 
+		<p>133 0128 <span class="f_red">5687</span></p><p class="font_s">预存1000元</p>
+		<div class="star"><image src="images/star1.png" /></div>
+	</div>
+	
+	<div class="single">
+		<img src="images/add_ico.png"> 
+		<p>133 0128 <span class="f_red">5687</span></p><p class="font_s">预存1000元</p>
+		<div class="star"><image src="images/star1.png" /></div>
+	</div>
+	
+	<div class="single rightline" style="border-right:1px solid #d8d8d8;">
+		<img src="images/add_ico.png">
+		<p>133 0128 <span class="f_red">5687</span></p><p class="font_s">预存1000元</p>
+		<div class="star"><image src="images/star1.png" /></div>
+	</div>
+	
+    <div class="single">
+    	<img src="images/add_ico.png"> <p>133 0128 <span class="f_red">5687</span></p><p class="font_s">预存1000元</p>
+		<div class="star"><image src="images/star1.png" /></div>
+	</div>
+	<div class="single rightline" style="border-right:1px solid #d8d8d8;">
+		<img src="images/add_ico.png"> 
+		<p>133 0128 <span class="f_red">5687</span></p><p class="font_s">预存1000元</p>
+		<div class="star"><image src="images/star1.png" /></div>
+	</div>
+	
+    <div class="single">
+    	<img src="images/add_ico.png"><p>133 0128 <span class="f_red">5687</span></p><p class="font_s">预存1000元</p>
+		<div class="star"><image src="images/star1.png" /></div>
+	</div>
+	<div class="single rightline" style="border-right:1px solid #d8d8d8;">
+		<img src="images/add_ico.png"> 
+		<p>133 0128 <span class="f_red">5687</span></p><p class="font_s">预存1000元</p>
+		<div class="star"><image src="images/star1.png" /></div>
+	</div>
+	
+    <div class="single">
+    	<img src="images/add_ico.png"> <p>133 0128 <span class="f_red">5687</span></p><p class="font_s">预存1000元</p>
+		<div class="star"><image src="images/star1.png" /></div>
+	</div>
+    <div class="clear"></div>
+  </div>
+  
+</div>
+	<div class="num_info hide">
+		<ul class="">
+	     	<li class="">
+	     		<div id="phone_num">13301285687</div>
+	     		<div id="address"><image src="images/add_ico2.png"  style="width:8%;"/>&nbsp;呼和浩特</div>	
+	     	</li>
+	       <li class="">
+	       	<div id="num_describe"><image src="images/phone_ico.png"  style="width:6%;"/>&nbsp; 靓号预存<span class="price_font">10.0</span>元，最低消费<span class="price_font">10.0</span>元</div>	
+	       </li>      
+	     </ul>
+     </div>
+	 <div class="button"> <a href="phone_result.html">下一步</a> </div>
+</body>
+</html>

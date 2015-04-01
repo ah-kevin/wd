@@ -1,0 +1,72 @@
+﻿@charset "utf-8";
+/* CSS Document */ 
+* { margin:0; padding:0; }
+html, body, ul, ol, li, dl, dt, dd, h1, h2, h3, form, p, img { margin:0; padding:0; }
+html, body { background:#efefef; color:#272727; line-height:22px; font:100 12px/1.5 '微软雅黑',Arial, Helvetica, sans-serif; width: 100%;overflow-x:hidden }
+ul li, li {list-style:none;}
+select, img { vertical-align:middle; }
+img { border:none; }
+table { padding:0px; margin:0px; }
+a { font-size:14px; text-align:center; color:#333; text-decoration:none; }
+a:hover { color:#333; text-decoration: none; }
+
+
+.taocan_title{ width: 97%; height: 3.3em; background: #fff; color: #a5a5a5;padding-left: 3%;}
+
+.taocan_info{
+	width:90%;
+	padding-left:5%;
+	line-height:2em;
+	padding-bottom: 5%;
+	background: #fff;
+}
+
+.small_title{
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 10px 0px 3px 0px;
+}
+
+.info1{
+	color: #a5a5a5;
+}
+.taobao{
+	width: 100%;
+	overflow: hidden;
+}
+.taocan_list{
+	width: 10000%;
+	height:8em;
+	border-bottom: 1px solid #a5a5a5;
+}
+.taocan_list>div{
+
+}
+.taocan_pro{
+	display: inline-block;
+	position: relative;
+	width: 100px;
+	margin-left: 10px;
+	border-top: 1px solid #a5a5a5;
+	border-left: 1px solid #a5a5a5;
+	border-right: 1px solid #a5a5a5;
+	text-align:center;
+	height:100%;
+	left: 0;
+	transition: left 0.5s ease-out;
+	-webkit-transition: left 0.5s ease-out;
+	-moz-transition: left 0.5s ease-out;
+	-ms-transition: left 0.5s ease-out;
+}
+
+
+.chosce{
+	background: #fff;
+}
+
+.taocan_pro img{
+	width: 3em;
+	padding-top: 10%;
+}
+
+

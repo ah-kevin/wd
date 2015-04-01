@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>我的嘿店</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/shangpin-details.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+	  (function(){
+		  var _w = document.documentElement.clientWidth;
+		  var _h = document.documentElement.clientHeight;
+			  var _fontsize = (_w / 640) * 20;
+			  var style = document.createElement('style');
+			  style.type = 'text/css';
+			  style.innerHTML = 'body{font-size:' + _fontsize + 'px}';
+			  document.getElementsByTagName('head').item(0).appendChild(style);
+			  
+		  })();
+	</script>
+  </head>
+  <body>
+	<div class="outer-box">
+    	<!--head-->
+    	<header class="clearfix">
+        	<a class="left return" href="#2" title="返回"><img src="images/L-return.png" alt="" width="100%" /></a>
+            <div class="left">商品列表</div>
+            <a class="left personal" href="#2" title="个人中心"><img src="images/personal.png" alt="" width="100%" /></a>
+        </header>
+        <!--content-->
+        <div class="content">
+            <!--banner-->
+            <div class="banner">
+                	<img class="left" src="images/banner-img1.png" alt="img1" />
+                    <div class="information clearfix">
+                        <p class="left" style="color:#fa0006;"><span style="font-size:1.5em">1000</span><span>元/年</span></p>
+                        <p class="right">仅限南京地区</p>
+                    </div>
+            </div>
+            <div class="inform">
+                <img src="images/kuandai-inform.png" alt="" width="100%" />
+                <p>2014年10月1日-10月31日</p>
+                <p>金秋10月宽带惠：</p>
+                <p>1、活动期间“逢时减白，逢百免单”详见活动页面；</p>
+                <p>2、全省接入费限时全免！</p>
+                <p>3、安装收阅不要钱，早装早享受！</p>
+                <p>4、免费提速一档三个月（20M及以上需要为FTTH接入）</p>
+                <p>5、宽带猫0租金，免费给你用，足不出户，享电信卓越品质宽带！（FTTB用户不享受）</p>
+            </div>
+            
+            <!--form-->
+            <a class="sure" href="#2">立即付款</a>
+        </div>
+    </div>
+  </body>
+</html>

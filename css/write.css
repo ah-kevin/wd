@@ -1,0 +1,71 @@
+/* CSS Document */
+/*outer-box*/
+.outer-box{ width:100%; min-width:320px; margin:0 auto;}
+/*header*/
+header{ width:100%; height:auto; padding:1em 0; background:#ffd140;}
+.return,.personal{ width:7.77778%; margin-left:0.5em;}
+header h1{ width:80%; text-align:center; font-size:2em; color:#4c4c4d;}
+
+/*content*/
+.content{ width:88%; font-size:1.5em; color:#545454; margin:1em auto 0; }
+.content .content-title{ width:96%; padding:0 2% 0; border-bottom:1px solid #d9d9d9;}
+.content .content-title div{ width:10%;}
+.content .content-title span{ width:80%; margin-left:3%; font-size:1em; color:#424242;}
+.content .number{ width:96%;;padding: 0.8em 1% 0 1%;height: 2em;}
+.content .number .Num{ width:85%; font-size:0.8em; }
+
+.content .taocan{ margin-left:2em; font-size:0.8em; color:#424242; line-height: 1.1em;}
+.content .taocan p{ margin-bottom:0.5em;}
+.content .taocan p.gray{ color:#a5a5a5;}
+
+.content .fapiao{ width:96%; padding:0 2%; border-bottom:1px solid #d9d9d9;}
+.content .fapiao div{ width:10%; margin-top:0.3em;}
+.content .fapiao span{ width:80%; margin-left:3%; font-size:1em; color:#424242;}
+.fapiao-head{font-size: 0.8em;
+width: 100%;
+color: #424242;
+padding-left: 0.6em;}
+.fapiao-head ul{ width:100%;}
+.fapiao-head ul li{ width:33%;}
+.fapiao-head ul li div{ width:15%; margin-top:2%;}
+.fapiao-head ul li span{ margin-left:0.5em;}
+
+.content .service,.content .service ul{ width:100%; margin-top:1em;}
+.service ul li{ position:relative; width:29%; margin-left:4%; margin-bottom:0.6em;}
+.service ul li a{ display:block; width:100%; text-align:center; color:#424242; background:#f4f4f4; border:0.1em solid #c6c6c6;}
+.service ul li a.cur{ background:none; border:0.1em solid #ffd44b;}
+.service ul li img{ position:absolute; right:-0.1em; top:0;}
+
+.content form{ width:100%;}
+.content form p{ position:relative; width:100%; margin-top:1em;}
+.content form p input{ width:70%; background:none; border:none; font-size:1em; color:#cacaca; text-indent:1em;}
+.content form p label a{ color:#424242; font-size:1em;}
+.content form p .pen{ width:5%;}
+.content form p .change{ margin:0 2% 0 7%;}
+.content form p .bord{ position:absolute; left:0; bottom:-0.2em;}
+
+.card_div{
+	height: 100%;
+width: 15%;
+float: left;}
+
+.card_div img{width:100%;}
+
+.number_hao{float: left;
+line-height: 2em;}
+
+.address_icon{
+	float: left;
+line-height: 2em;
+width: 1.5em;
+margin-left: 10%;}
+
+.address{float: left;
+line-height: 2em;}
+
+
+/*bottom*/
+.bottom{ width:100%; margin:2.5em auto 0;}
+.bottom .yuyue{ width:49.8%; text-align:center; color:#424242; font-size:2em; background:#ffd140; padding:0.5em 0; border-right:1px solid #d2ab33;}
+.bottom .pay{ width:49.8%; text-align:center; color:#424242; font-size:2em; background:#ffd140; padding:0.5em 0;}
+

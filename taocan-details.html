@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>套餐详情</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/taocandetails.css">
+    <link href="css/public.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+	  (function(){
+		  var _w = document.documentElement.clientWidth;
+		  var _h = document.documentElement.clientHeight;
+			  var _fontsize = (_w / 640) * 20;
+			  var style = document.createElement('style');
+			  style.type = 'text/css';
+			  style.innerHTML = 'body{font-size:' + _fontsize + 'px}';
+			  document.getElementsByTagName('head').item(0).appendChild(style);
+			  
+		  })();
+	</script>
+  </head>
+  <body>
+	<div class="outer-box">
+    	<!--head-->
+    	<div class="header">
+            <a href="taocan-list.html">
+				<img class="to-left" src="images/back.png" />
+                </a>
+				<div class="title">个人定制</div>
+				<img class="to-right" src="images/man.png" />
+				<div class="clear"></div>
+			</div> 
+        <!--content-->
+        <div class="content">
+            <div class="title clearfix">
+            	<image src="images/gantan_icon.png"  style="width:1.2em; float：left;"/>
+                <span >国内纯流量套餐</span>
+            </div>
+            <div class="details">
+            	<h4>纯流量云卡49元套餐包括：</h4>
+                <p>国内流量：2GB</p>
+                <p>国内语音：0</p>
+                <p>国内短信：0</p>
+                <p>赠送业务：来电显示，189邮箱</p>
+                
+                <h4>超出套餐</h4>
+                <p>国内流量：不足100MB按0.3元/MB收费达到100MB（30元）时，额外赠送用户400MB流量（即30元/500MB）；用户套餐外流量超过500MB时，仍按上述原则（即每超出500MB即按照30元/500MB收费）收费，以此类推。</p>
+                <p>国内通话：0.15元/分钟</p>
+                <p>国内短/彩信：0.1元/条</p>
+            </div>
+            <!--form-->
+        </div>
+           <div class="button"> <a href="phone_result.html">下一步</a> </div>
+    </div>
+  </body>
+</html>
