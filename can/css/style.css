@@ -1,0 +1,122 @@
+
+
+/* ÂòÊÖ»úÖ§¸¶Ò³充值确认页面 */
+#main .pay{
+height: 10em;
+background-color: #fff;
+background-size: 30%;
+text-align: center;}
+
+#main .kulian{
+height: 4em;
+background-color: #fff;
+background-size: 30%;
+text-align: center;
+padding-top:2em;
+}
+
+#main .kulian img{
+ 	width:18%;
+ }
+
+
+#main .pay span{ color:#f06751;}
+#main .pay_tit{ width: 100%;
+height: 2em;
+margin-top: 20px;
+line-height: 2em;
+text-indent: 0.7em;
+}
+#main .way{margin: 10px auto 0 auto;
+padding-bottom: 20px;
+font-size: 0.9em;}
+#main .way .text{ text-indent:1em; text-align:left;}
+/* #main .way ul li { width:95%; 
+	border-bottom:1px solid #ddd; margin:0 auto;} */
+#main .way ul .thison2,#main .way ul .thison{
+	width:100%;border-bottom:1px solid #ddd; margin:0 auto;
+	border-sizing:border-box;
+}	
+#main .way ul li a{ display:block; width:100%; height:60px; line-height:60px; text-indent:40%; background:url(../images/graycirule.jpg) 95% 50% no-repeat;}
+#main .way ul li.thison4 a{ height:50px;}
+#main .way ul li.height a{background:url(../images/ok.png) 95% 50% no-repeat;}
+
+#main .conway{width:85%;height:180px; background:#fff;margin:0px auto;
+	border:1px solid #ddd; border-radius:10px;}
+#main .conway ul li.thison{ background:url(../images/yizhifu.jpg) left center no-repeat;}
+#main .conway ul li.thison2{ background:url(../images/zhifubao.jpg) left center no-repeat;}
+#main .conway ul li.thison3{ background: url(../images/weixin.png) left center no-repeat;}
+/* ----------预约---------- */
+.pay_tit1{ width: 100%;
+text-indent: 1em;margin-top: 5%;
+}
+#order_info{
+	width:100%; 
+	border:1px solid #bbb;
+
+}
+#order_info th{
+	text-align: center;
+	width:25%; 
+	border:1px solid #bbb;
+	height: 40px;
+	background: #e1dddd;
+	font-weight: 500;
+	font-size: 1.05em;
+}
+#order_info td{
+	text-align: center;
+	border:1px solid #bbb;
+	height: 40px;
+	color:#4c4c4d;
+}
+
+.con{width: 100%;margin-top: 5%;}
+.content{ width:88%; font-size:1em; color:#545454; margin:1em auto 0; }
+.content .content-title{ width:96%; padding:0 2% 0;margin-top: 8%; }
+.content .content-title div{ width:10%;width: 1.7em;margin-left: -3%;}
+.content .content-title span{ width:80%; margin-left:1%;
+ font-size:1.1em; color:#424242;}
+.left{float:left;}
+.con_bot{width: 100%;padding-left: 5%;margin-bottom: 6px;color: #4c4c4d;}
+.end{margin-top:20% ;text-align: center;margin-bottom: 10%;}
+/* -------------------可用余额 ----------------------*/
+.about{width: 100%;overflow: hidden;}
+.huafei{width: 50%;float: left;padding: 0.8em 0em;text-align: center;margin-bottom: 3em;}
+.liuliang{width: 49%;background: #f7f7f7;text-align: center;
+	float: left;padding: 0.8em 0em;margin-bottom: 3em;
+	border-left: 1px solid #ccc;border-bottom: 1px solid #ccc;
+}
+.pay_tit2{width: 100%;text-align: center;padding: 8% 0;}
+.img{width: 22em;text-align: center;position: relative;margin:0 auto;}
+.img p{position: absolute;top:27%;left:40%;font-size: 1em;color:#4c4c4d;}
+.img p strong{font-size: 40px;}
+.yuer-bot{margin-top:8%;width: 100%;text-align: center;margin-bottom: 12em;}
+.yuer-bot1,.yuer-bot2,.yuer-bot3{width: 33%;float: left;}
+.yuer-bot1,.yuer-bot2{border-right:1px solid #4c4c4d;}
+/* -------------------可用流量 ----------------------*/
+.about1{width: 100%;overflow: hidden;}
+.liuliang1{width: 50%;float: left;padding: 0.8em 0em;text-align: center;margin-bottom: 3em;}
+.huafei1{width: 49%;background: #f7f7f7;text-align: center;
+	float: left;padding: 0.8em 0em;margin-bottom: 3em;
+	border-right: 1px solid #ccc;border-bottom: 1px solid #ccc;
+}
+.img-1{width: 22em;text-align: center;position: relative;margin:0 auto;}
+.img-1 p{position: absolute;top:24%;left:33%;font-size: 1em;color:#4c4c4d;}
+.img-1 p span{font-size: 40px;}
+/* ------------------排队页面-------------------- */
+.content1{ width:90%; font-size:0.95em; color:#4c4c4d; 
+	margin:1em auto 0;}
+.content1 .content-title{ width:96%; padding:0 2% 0;margin-top: 8%; }
+.content1 .content-title div{ width:10%;width: 1.7em;margin-left: -3%;}
+.content1 .content-title span{ width:80%; margin-left:1%;
+ font-size:1.1em; color:#424242;}
+.left1{float:left;
+line-height: 2em;}
+.day{width: 95%;border-bottom: 1px solid #ccc;border-top: 1px solid #ccc;
+	display: inline-block;padding-left: 5%;}
+.date{width: 80%;float: left;font-size: 0.8em;padding:5% 0;}
+.day .imgs,.times .imgs{float: right;padding:5% 0;margin-right:5%;}
+.times{width: 95%;border-bottom: 1px solid #ccc;
+	display: inline-block;padding-left: 5%;}
+.time{width: 80%;float: left;font-size: 0.8em;padding:5% 0;}

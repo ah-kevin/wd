@@ -13,6 +13,54 @@
 
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+	<style>
+		.nice-select {
+			float: left;
+			width: 49%;
+			height: 26px;
+			border: 1px solid #999;
+			position: relative;
+			box-shadow: 0 0 5px #999;
+			background: #FAFAFA url(images/a2.jpg) no-repeat right center;
+			cursor:pointer;
+		}
+		.nice-select input {
+			display: block;
+			width: 100%;
+			height: 26px;
+			line-height: 26px \9;
+			text-align: center;
+			border: 0;
+			outline: 0;
+			background: none;
+			cursor:pointer;
+		}
+		.nice-select ul {
+			width: 100%;
+			display: none;
+			position: absolute;
+			left: -1px;
+			top: 26px;
+			overflow: hidden;
+			background-color: #fff;
+			max-height: 150px;
+			overflow-y: auto;
+			border: 1px solid #999;
+			border-top: 0;
+			box-shadow: 0 3px 5px #999;
+			z-index:9999;
+		}
+		.nice-select ul li {
+			height: 30px;
+			line-height: 30px;
+			overflow: hidden;
+			padding: 0 10px;
+			cursor: pointer;
+		}
+		.nice-select ul li.on {
+			background-color: #e0e0e0;
+		}
+	</style>
 <script>
 $(function(){
 	$('.drop_down .menu ul li:even').css('background-color','#dfdfdf');
@@ -83,6 +131,7 @@ function search(){
 	alert("查询");
 }
 </script>
+
 </head>
 <body>
 <div class="background">
@@ -107,13 +156,15 @@ function search(){
   </nav>
 	
   <div class="num_bck">
-    <div class="skl">呼和浩特<a href="#"><img src="images/haoma_arrow_d.png" /></a> 
-      <!--下拉部分已隐藏-->
-      <!--&lt;!&ndash;-->
-      <!--<div class="skl_dd">-->
-        <!--<a href="#">aaaaaa</a>-->
-      <!--</div>-->
-      <!--&ndash;&gt; -->
+
+	  <div class="nice-select">
+		  <input type="text" value="==选择省份==" readonly>
+		  <ul>
+			  <li >湖北省</li>
+			  <li >广东省</li>
+			  <li>湖南省</li>
+			  <li>四川省</li>
+		  </ul>
     </div>
     <div class="skr">
     	<a class="iw" href="#" ><img src="images/search.png" onclick="search()"/></a>
@@ -219,5 +270,20 @@ function search(){
 	     </ul>
      </div>
 	 <div class="button"> <a href="write.html">下一步</a> </div>
+
+<script>
+	$('.nice-select').click(function(e){
+		$(this).find('ul').toggle();
+		e.stopPropagation();
+	});
+	$('.nice-select li').click(function(e){
+		var val = $(this).text();
+
+		$(this).parents('.nice-select').find('input').val(val);
+		$('.nice-select ul').hide();
+		e.stopPropagation();
+	});
+
+</script>
 </body>
 </html>

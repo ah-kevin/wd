@@ -289,14 +289,17 @@ body {
 	float: left;
 	width: 100%;
 	text-align: left;
-	line-height: 5vw;
+	line-height: 5vw；
 }
 .main.width-all .goods_list dl dt .goods_name {
 	font-size: 3.5vw;
 	float: left;
 	width: 100%;
-	line-height: 5vw;
+	height: 14vw;
+	line-height: 7vw;
 	text-align: left;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 

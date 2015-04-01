@@ -1,0 +1,35 @@
+/* CSS Document */
+/*outer-box*/
+.outer-box{ width:100%; min-width:320px; margin:0 auto;}
+/*header*/
+header{ width:100%; height:auto; padding:1em 0; background:#ffd140;}
+.return,.personal{ width:7.77778%; margin-left:0.5em;}
+header .title{ width:80%; text-align:center; font-size:2em; color:#4c4c4d;}
+
+/*content*/
+.content{ width:100%; font-size:1.5em; color:#4c4c4d;}
+.content .top{ width:100%; padding:1em 0; border-bottom:1px solid #cacaca;}
+.content .top .top-l{ width:60%; margin-left:0.5em;}
+.top-l img{ width:10%; margin-top:0.1em;}
+.top-l span{ text-indent:0.5em;}
+.content .top .top-r{ width:36%; text-align:right;}
+.content .Value{ width:95%; margin:2em auto 0;}
+.content .Value div{ position:relative; width:30%; background:#f7f7f7; border:1px solid #b4b4b4; text-align:center; padding:1em 0; font-size:0.8em; color:#272727;}
+.content .Value div.mid{ margin:0 1em;}
+.content .Value div img{ display:none; position:absolute; right:0; top:0; width:2em;}
+.content .date{ width:100%; padding:2em 0 0; text-indent:0.5em;}
+.content .date img{ width:6%; margin-right:0.5em;}
+
+.content .shijian{ width:95%; margin:2em auto 0;}
+.content .shijian div{ position:relative; width:42.5816%; background:#f7f7f7; border:1px solid #b4b4b4; text-align:center; padding:1em 0; font-size:0.8em; color:#272727;}
+.content .shijian div.mid{ margin-right:13.353%;}
+.content .shijian div.tou{ margin-bottom:2em;}
+.content .shijian div img{ display:none; position:absolute; right:0; top:0; width:2em;}
+.content .time{ width:100%; padding:2em 0 0; text-indent:0.5em;}
+.content .time img{ width:6%; margin-right:0.5em;}
+
+/*footer*/
+footer{ width:100%;}
+footer a{ display:block; width:81.38889%; margin:3em auto 4em; padding:0.5em 0; text-align:center; background:#fed04f; color:#4c4c4d; font-size:2em; border-radius:0.3em; }
+
+

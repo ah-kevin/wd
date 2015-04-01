@@ -1,0 +1,59 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+<title>中国电信掌上营业厅</title>
+<link rel="stylesheet" href="css/public.css" />
+<link rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script>
+$(function(){
+	//var ids = $(".way ul li:eq(1)").attr("id");
+	$(".way ul li").click(function(){
+		$(this).addClass("height").siblings().removeClass("height");
+		
+	});
+});
+</script>
+</head>
+
+<body>
+<div id="head">
+  <div class="title" style="background:#fed04f;">
+  	<div class="back"><img src="images/back.png"  onclick=javascript:history.back();""></div>
+    <h1>电信微电</h1>
+    <div class="myinfo">
+        <a href="../admin/cart.html">
+        <img src="images/man.png" >
+        </a></div>
+  </div>
+</div>
+<!-- <div class="pay_tit2">尊敬的 13304461813 用户 </div> -->
+<div class="about1">
+    <div class="huafei1">
+        <a href="yuer.html">
+        话费查询
+    </a>
+    </div>
+    <div class="liuliang1">流量查询</div>
+</div>
+<div class="img-1">
+  <p>可 用 流 量<br><br> <span>532.00</span><br><br> MB</p><img src="images/yuer.png" width="80%"/>
+</div>
+<div class="pay_tit2">尊敬的 13304461813 用户 </div>
+<div class="yuer-bot">
+     <p class="yuer-bot1">总流量<br><br>1024.00M</p>
+     <p class="yuer-bot2">本月已用<br><br>492.00M</p>
+     <p class="yuer-bot3">剩余流量<br><br>532.00</p>
+ </div>
+ <div class="clearfloat"></div>
+ <img src="images/fixed-bot.png" alt="" width="100%" style="position:fixed; bottom:0;"/> 
+</body>
+</html>
