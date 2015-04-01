@@ -531,7 +531,7 @@ body {
 	width: 100%;
 }
 .main.width-all .parts_more a .more_txt {
-	float: left;
+	/*float: left;*/
 	margin-left: 3vw;
 	font-size: 2.8vw;
 	color: #969595;
