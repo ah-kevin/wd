@@ -475,14 +475,14 @@ body {
 .main.width-all .parts_choose .num span {
 	font-size: 3vw;
 	float: left;
-	width: 15%;
+	width: 18%;
 	line-height: 10vw;
 	text-align: center;
 	display: block;
 }
 .main.width-all .parts_choose .num ul {
 	float: left;
-	width: 80%;
+	width: 76%;
 	padding-left: 5%;
 }
 .main.width-all .parts_choose .num .paddingClear {
@@ -558,7 +558,8 @@ body {
 .footer_details a {
 	text-align: center;
 	display: block;
-	width: 100%;
+	width: 50%;
+	float: left;
 }
 .main.width-all .parts_choose .num .paddingClear li .phone{
 	padding-right: 8vw;

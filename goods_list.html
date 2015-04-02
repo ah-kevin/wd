@@ -53,7 +53,7 @@
         var offset = $("#end").offset();
         $(".addcar").click(function (event) {
             var addcar = $(this);
-            var img = addcar.parents('dd').siblings('li').children('div.goods_show').find('img').attr('src');
+            var img = addcar.parents('dd').siblings('li').children('a').children('div.goods_show').find('img').attr('src');
 
             console.log(img);
             var flyer = $('<img class="u-flyer" src="' + img + '">');
@@ -107,13 +107,14 @@
 <section class="main width-all">
     <ul class="goods_list">
         <dl>
-            <a href="phone_details.html">
+
         <li>
             <div class="price"><img src="images/price.png" width="217" height="56"></div>
-            <div class="goods_show"><img src="images/20150326_6.png" width="581" height="309"></div>
-
+            <a href="phone_details.html">
+            <div class="goods_show"><img src="images/20150326_6.png" width="581" height="309">
+            </div>
+                </a>
         </li>
-            </a>
 
             <dt>
                 <span class="goods_name">【天翼4G】iPhone6 PLUS 64G 金色4G单卡5.5寸 64 位A8处理器 M8协处理器</span>
@@ -126,13 +127,14 @@
             </dd>
         </dl>
         <dl>
-            <a href="phone_details.html">
+
         <li>
             <div class="price"><img src="images/price.png" width="217" height="56"></div>
+            <a href="phone_details.html">
             <div class="goods_show"><img src="images/20150326_7.png" width="581" height="309"></div>
-
-        </li>
 </a>
+        </li>
+
             <dt>
                 <span class="goods_name">【天翼4G】iPhone6 PLUS 64G 金色4G单卡5.5寸 64 位A8处理器 M8协处理器</span>
                 <span class="goods_price">￥5800.00</span>
@@ -142,13 +144,14 @@
             <dd><span class="addcar"><img src="images/lcon_cart1.png" width="90%" /></span></dd>
         </dl>
         <dl>
-            <a href="phone_details.html">
+
         <li>
             <div class="price"><img src="images/price.png" width="217" height="56"></div>
+            <a href="phone_details.html">
             <div class="goods_show"><img src="images/20150326_6.png" width="581" height="309"></div>
-
-        </li>
 </a>
+        </li>
+
             <dt>
                 <span class="goods_name">【天翼4G】iPhone6 PLUS 64G 金色4G单卡5.5寸 64 位A8处理器 M8协处理器</span>
                 <span class="goods_price">￥5800.00</span>
