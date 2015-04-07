@@ -1,0 +1,58 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<title>中国电信</title> 
+<link href="css/denglu.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	width: 20px;
+	height: 100px;
+	z-index: 100;
+	top: 200px;
+	right:20px;
+	line-height:20PX;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/action_menu.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $("#menu>ul>li").click(function(){
+		$(this).addClass("mdq").siblings().removeClass("mdq");
+		})
+});
+</script>
+</head>
+
+<body>
+
+<div class="background">
+
+     <div class="header">
+        <!-- <img class="to-left" src="images/kefu-reture.jpg" />
+        <img class="to-right" src="images/tit_rig2.png" /> -->
+        <div class="title">微电登录</div>
+        <div class="clear"></div>
+     </div>
+     <div class="line">
+         <div class="haoma"><img src="images/people.png" width="5%"/>&nbsp;&nbsp;<input style="background:none; border:none; color:rgba(255,255,255,1);" type="text" placeholder="请输入您的手机号码" /></div>
+         <img src="images/line-bg.png" width="100%"/>
+         
+     </div> 
+     <div class="line3">
+        <div class="mima"><img src="images/suo.png" width="5%"/>&nbsp;&nbsp;<input style="background:none; border:none; color:rgba(255,255,255,1);" type="password" placeholder="请输入密码" / >
+            <a class="yanzheng" href="#">发送验证码</a>
+        </div>
+        <img src="images/line-bg2.png" width="50%"/> 
+        <a class="load" href="#">下一步</a>
+
+     </div> 
+     
+</div>
+</body>
+</html>

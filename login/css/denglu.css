@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+body{color:#272727; text-align:center; overflow-y: scroll; font-family:"微软雅黑"; 
+background:#F7F8FA;}
+*{ margin:0px; padding:0px;font-family:"微软雅黑"; font-size:12px;}
+.clear{ clear:both; font-size:0px; height:0px;}
+p{line-height:16px;}
+ul li{ margin:0px; padding:0px; list-style-type:none;}
+img{ border:0px; vertical-align:middle;}
+a{ color:#272727; text-decoration:none;font-size: 16px;}
+.scope{min-width:320px; max-width:540px;}
+.font_green {color:#70c437;}
+.font_16 { font-size:16px;}
+/*页面两侧整体缩进故采用通用样式*/
+.indent{
+	padding-left:7%;
+	padding-right:7%;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.background{width:100%;
+			 height:100%;
+            background:url(../images/BG.png) no-repeat ;
+			background-size:100% 100%;
+			
+		    overflow-y:auto;
+			position:relative; }
+
+
+.header{ text-align:center; margin:0px auto;
+ background:#ffd140; 
+ width:100%;height:44px;position:relative;}
+.title{height:44px;line-height:44px;
+	color:#272727;font-size:20px;text-align: center;
+}
+.to-left{
+	z-index:9999;
+	position: absolute;
+	top:7px;
+	left:9px;
+	height:29px;line-height: 29px;}
+.to-right{
+	z-index:8000;
+	position: absolute;
+	top:7px;
+	right:9px;
+	height:29px;} 
+.line{width: 88%;margin:0 auto;margin-top: 46%;text-align: left;}
+.line2{width: 88%;margin:0 auto;margin-top: 6%;text-align: left;}
+.haoma,.mima{color: #adadad;font-size: 14px;}
+.haoma img,.mima img{padding-left: 2%;margin-bottom: 2%;}
+.load{background: #99823a;color:#fff;text-align: center;display: block;
+	width: 80%;height:40px;line-height: 40px;border-radius: 8px;
+	margin: 30px auto 0px; /* margin:0 auto;  */
+ }
+ .load-bot {margin-top: 2%;}
+ .load-bot a{color:#fff;font-size: 12px;}
+ /* ---------------------------找回密码 ------------------------*/
+ .line3{width: 88%;margin:0 auto;margin-top: 6%;text-align: left;}
+.yanzheng{background: #99823a;color:#fff;text-align: center;display: block;
+	width: 30%;height:35px;line-height: 35px;border-radius: 8px;float: right;
+	font-size: 12px;
+	}
+.mima3m{color: #adadad;font-size: 14px;}

@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin:0; padding:0; }
+html, body, ul, ol, li, dl, dt, dd, h1, h2, h3, form, p, img { margin:0; padding:0; }
+html, body {background:#fff;;color:#333; line-height:22px; font:100 14px/1.8 '微软雅黑',Arial, Helvetica, sans-serif; }
+ul li, li {list-style:none;}
+select, input, img { vertical-align:middle; font-size:14px;}
+img { border:none; }
+table { padding:0px; margin:0px; }
+a { font-size:14px; text-align:center; color:#272727; text-decoration:none; }
+a:hover { color:#272727; text-decoration: none; }
+.fl{ float:left; display:inline;}
+.fr{ float:right; display:inline;}
+.al{ text-align:left!important;}
+.ac{ text-align:cente!important;}
+.ar{ text-align:right!important;}
+.clear{ clear:both;}
+.mt10{ margin-top:10px!important;}
+.mt20{ margin-top:20px!important;}
+.mt40{ margin-top:40px!important;}
+.auto-center,.auto-center-middle{
+	margin:0px auto;}
+/* .auto-center-middle{text-align:center;} */
+.edit_dg .buy{
+	text-align:center;
+	background:#f78f00;color: #fff;
+	display: block;width: 88%;margin:0 auto;
+	height: 40px;line-height: 40px;
+	border-radius: 10px;margin-top: 3px;
+
+}
+.auto-padding{padding:0 20px;}
+.weight{font-weight:bold;}
+.auto-left{display:block;margin:0 0 0 10px;text-align:left;font-size: 14px;}
+.t02{font-size:13px;color:#F6545E;;font-weight: 500;}
+.info-title{
+	text-align:left;
+	padding-left:14px;height:27px;background:url(../images/bg_banner.png) no-repeat ;
+}
+
+.background{width:100%;
+			 height:100%;
+            background:url(images/BG.png) no-repeat ;
+			background-size:100% 100%;
+			
+		    overflow-y:auto;
+			position:relative; }
+/*页头*/
+.header{ text-align:center; margin:0px auto; background:#f78f00; width:100%;height:51px;position:relative}
+.header .title{height:51px;line-height:51px;color:white;font-size:20px;}
+.to-left{
+	z-index:8000;
+	position: absolute;
+	top:9px;
+	left:9px;
+	height:33px;}
+.banner{width: 100%;text-align: center;}
+.banner-s img{position: absolute;top:26%;left:6%;z-index: 2;}
+.dian{margin: 5% 0 0 33%;font-size: 5.5vw;}
+.dian img{padding-left: 2%;}
+.content{width: 96%;text-align: center;margin:0 auto;font-size: 16px;}
+.box{width: 100%;height:60%;margin-top: 2%;}
+.box-l{width:50%;float: left;position: relative;padding-left: 3%;}
+.radiobg{}
+.close{position: absolute;top:8%;left: 8%;}
+.huobi{position: absolute;top:8%;left: 25%;}
+.phone{position: absolute;top:8%;left: 45%;}
+.pingluo{position: absolute;top:8%;left: 65%;}
+.sou{position: absolute;top:8%;left: 85%;}
+.box-r{float:right;display: block;width: 45%;
+	height: 60px;line-height: 48px;
+	  
+}  
+/* 手机轮播图 */
+.focus{ width:100%;   margin:0 auto; position:relative; overflow:hidden;   }
+.focus .hd{ width:100%; height:5px;  position:absolute; z-index:1; bottom:0; text-align:center;  }
+.focus .hd ul{ overflow:hidden; display:-moz-box; display:-webkit-box; display:box; height:5px; background-color:rgba(51,51,51,0.5);   }
+.focus .hd ul li{ -moz-box-flex:1; -webkit-box-flex:1; box-flex:1; }
+.focus .hd ul .on{ background:#FF4000;  }
+.focus .bd{ position:relative; z-index:0; }
+.focus .bd li img{ width:90%;margin-left: 5%;}
+.focus .bd li a{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); /* 取消链接高亮 */ }
+
+.title1{
+	text-align:left;
+	padding-left:14px;height:27px;background:url(../images/bg_banner.png) no-repeat ;
+}
+.hhdd{width: 100%;text-align: center;margin:0 auto;}
+ .hhdd ul li{margin: 0 auto;
+ 	width: 28%;height: 12%;
+ 	float: left;display: block;padding-left: 5%;
+ 	} 
+ .hhdd img{width:62px;height:88px;text-align: center;
+ 	border:1px solid #ccc;border-radius: 10%;padding: 3%  20%;
+ }
+/* 所有商品 */
+.title2{
+	text-align:left;
+	padding-left:14px;height:27px;background:url(../images/bg_banner.png) no-repeat ;
+}
+.conBL{width:100%;  float:left;margin-bottom: 2%;
+ /* background:url(img/conbottom_line.jpg) no-repeat right top; */
+  /* padding:0 50% 0 2%; */ }
+    .conBL dl{height:60%; padding-left:3%;} 
+	.conBL dt{width:40%; height:20%; float:left;}
+	.conBL dt img{width: 60%;
+		border:1px solid #CCC; padding:3% 12%; display:block;
+		border-radius: 10%;
+	}
+	.conBL dd{width:60%;float:right;height: 30px;}
+	.conBL dd span{color: #f88b00;font-weight: 700;}
+	.conBL dd a:link,.conBL dd a:visited{color:#398C00;} 
+
+/*老板不在家*/
+.guess{
+text-align:center;
+}
+
+.guess .title{
+	text-align:left;
+	padding-left:14px;height:27px;background:url(../images/bg_banner.png) no-repeat ;
+}
+ .guess .img-block{
+	width:30%; border-radius: 10%;
+	text-align:center;
+}
+.guess .img-block img{border: 1px solid #ccc;}
+/* .guess img{
+	 width:100%;
+} */
+.guess .auto-center{display:block;} 
+
+
+
+
+
+  

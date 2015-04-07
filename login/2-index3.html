@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>我的嘿店</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/2-index3.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+	  (function(){
+		  var _w = document.documentElement.clientWidth;
+		  var _h = document.documentElement.clientHeight;
+			  var _fontsize = (_w / 640) * 20;
+			  var style = document.createElement('style');
+			  style.type = 'text/css';
+			  style.innerHTML = 'body{font-size:' + _fontsize + 'px}';
+			  document.getElementsByTagName('head').item(0).appendChild(style);
+			  
+		  })();
+	</script>
+  </head>
+  <body>
+	<div class="outer-box">
+    	<!--head-->
+    	<header class="clearfix">
+        	<a class="left return" href="#2" title="返回"><img src="images/L-return.png" alt="" width="100%" /></a>
+            <div class="left">电信微店</div>
+            <a class="left personal" href="#2" title="个人中心"><img src="images/personal.png" alt="" width="100%" /></a>
+        </header>
+        <!--content-->
+        <div class="content">
+        	<!--top-->
+        	<div class="c-top clearfix">
+            </div>
+            <!--address-->
+            <div class="address clearfix">
+            </div>
+            <!--phone-->
+            <div class="phone">
+                <img src="images/circle.png" alt="手机区域" width="100%" />
+                <img class="center" src="images/2-index2-center.png" alt="中心" width="25%" />
+                <img class="heyue" src="images/2-index2-heyue.png" alt="合约" width="15%" />
+                <img class="kuandai" src="images/2-index2-kuandai.png" alt="宽带" width="22%" />
+                <img class="liuliang" src="images/2-index2-liuliang.png" alt="流量" width="13%"/>
+                <img class="number" src="images/2-index2-number.png" alt="号码" width="20%" />
+                <img class="paidui" src="images/2-index2-paidui.png" alt="排队" width="17%" />
+                <img class="peijian" src="images/2-index2-peijian.png" alt="配件" width="20%" />
+                <img class="shouji" src="images/2-index2-phone.png" alt="手机" width="20%" />
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

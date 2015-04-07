@@ -1,0 +1,29 @@
+/* CSS Document */
+/*outer-box*/
+.outer-box{ width:100%; min-width:320px; margin:0 auto;}
+/*header*/
+header{ width:100%; height:auto; padding:1em 0; background:#ffd140;}
+.return,.personal{ width:7.77778%; margin-left:0.5em;}
+header div{ width:80%; text-align:center; font-size:2em; color:#4c4c4d;}
+
+/*content*/
+.content{ width:100%; height:100%; background:url(../images/index1-bg.png) no-repeat; background-size:cover; font-size:0.8em;}
+.c-top{ width:100%; height:auto; padding:1.5em 0;}
+.c-top img{ width:10%; height:auto; margin-left:1em; margin-right:0.5em;}
+.c-top dl{ width:80%; height:auto; color:#ffd140; font-weight:bold;}
+.c-top dl dt{ font-size:2.5em;}
+
+.address{ position:relative; width:60%; border-radius:1em; background:rgba(255,255,255,0.5); color:#ffd140; margin-left:1em; font-size:1.5em;}
+.address img{ position:absolute; left:1em; top:0.2em; width:0.8em;}
+.address span{ margin-left:2em;}
+
+.phone{ position:relative; width:100%; margin:11% 0;}
+.phone div{ width:35.7%; margin:0 auto;}
+.phone .price{ position:absolute; left:-2%; top:20%;  width:34.5833%;}
+.attation{ position:absolute; right:0; bottom:0%; width:13%;}
+/*bottom*/
+.bottom{ position:relative; width:100%; padding-top:4%; padding-bottom:5%; background:#dce1d7;}
+.bottom a{ float:left; font-size:2em; width:50%; text-align:center; color:#595959;}
+.bottom img{ position:absolute; left:29%; bottom:0; width:43.0555%;}
+
+@media (min-width:1080px){.phone{margin:16% 0;}}

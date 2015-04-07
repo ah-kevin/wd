@@ -1,0 +1,34 @@
+/* CSS Document */
+/*outer-box*/
+.outer-box{ width:100%; min-width:320px; margin:0 auto; background:url(../images/3-index-bg4.jpg) no-repeat; background-size:cover;}
+/*header*/
+header{ width:100%; height:auto; padding:1em 0; background:#ffd140;}
+.return,.personal{ width:7.77778%; margin-left:0.5em;}
+header div{ width:80%; text-align:center; font-size:2em; color:#4c4c4d;}
+
+/*content*/
+.content{ position:relative; width:100%; height:100%;  font-size:0.8em; padding-bottom:35%;}
+.c-top{ width:100%; height:auto; padding:1.5em 0;}
+.c-top img{ width:10%; height:auto; margin-left:1em; margin-right:0.5em;}
+.c-top dl{ width:80%; height:auto; color:#FC3; font-weight:bold;}
+.c-top dl dt{ font-size:2.5em;}
+
+.address{ position:relative; width:60%; border-radius:1em; background:rgba(255,255,255,0.5); color:#FC3; margin-left:1em; font-size:1.5em;}
+.address img{ position:absolute; left:1em; top:0.2em; width:0.8em;}
+.address span{ margin-left:2em;}
+
+.phone{ position:relative; width:90%; margin:16% auto;}
+.phone .center{ position:absolute; left:40%; top:40%;}
+.phone .heyue{ position:absolute; right:26%; bottom:10%;}
+.phone .kuandai{ position:absolute; right:9%; bottom:40%;}
+.phone .liuliang{ position:absolute; left:43%; top:6%;}
+.phone .number{ position:absolute; left:12%; bottom:38%;}
+.phone .paidui{ position:absolute; left:30%; bottom:10%;}
+.phone .peijian{ position:absolute; left:20%; top:20%;}
+.phone .shouji{ position:absolute; right:20%; top:20%;}
+
+.content .bottom{ position:absolute; bottom:0; left:0; width:100%; color:#FFF; background:rgba(255,204,0,0.5); text-align:center;}
+.content .bottom a{ display:block; width:6%; margin:0 auto;}
+.content .bottom a img{ padding:1em 0;}
+
+
