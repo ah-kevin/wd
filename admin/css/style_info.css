@@ -202,7 +202,7 @@ body {
 	padding-bottom: 3%;
 }
 .main .right {
-	border-right-style: none;
+	/*border-right-style: none;*/
 }
 .main .cart dt {
 	position:relative;

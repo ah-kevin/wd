@@ -9,12 +9,25 @@
 <meta name="format-detection" content="telephone=no">
 <link href="css/style_flow.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-1.11.1.min.js"></script>
+
 <script src="js/base.js"></script>
+    <style>
+        .main.width-all .parts_choose .num .paddingClear li {
+            padding-bottom: 2vw;
+
+        }
+    </style>
+    <script src="js/base.js"></script>
+
     <script>
         $(function () {
             $(".content li a").click(function(){
                 $(this).css({"border-color":"#ffd140","background":"none","color":"#ffd140"}).find("img").show();
                 $(this).parent().siblings().find("a").css({"    border-color":"#b4b4b4","background":"#f7f7f7","color":"#272727"}).find("span img").hide();
+            });
+            $(".paddingClear li a").click(function(){
+                $(this).css({"border-color":"#ffd140","background":"none"}).find("img").show();
+                $(this).parent().siblings().find("a").css({"border-color":"#b4b4b4"}).find("img").hide();
             });
         })
     </script>
@@ -50,6 +63,17 @@
               <li><a href="javascript:void(0);"><img src="images/color_2.png" width="28" height="58"><span><img src="images/chooseList.png" width="40" height="36" style="display: none"></span></a></li>
               <li><a href="javascript:void(0);"><img src="images/color_3.png" width="28" height="58"><span><img src="images/chooseList.png" width="40" height="36" style="display: none"></span></a></li>
               <li><a href="javascript:void(0);"><img src="images/color_3.png" width="28" height="58"><span><img src="images/chooseList.png" width="40" height="36" style="display: none"></span></a></li>
+          </ul>
+      </div>
+      <div class="num">
+          <span>内存</span>
+          <ul class="paddingClear">
+              <li><a href="javascript:void(0);" class="phone onChoose">16G<span><img src="images/chooseList.png" width="40" height="36"></span></a></li>
+              <li class="margin"><a href="javascript:void(0);" class="phone">32G<span><img src="images/chooseList.png" width="40" height="36" style="display: none"></span></a></li>
+              <li><a href="javascript:void(0);" class="phone">64G<span><img src="images/chooseList.png" width="40" height="36" style="display: none"></span></a></li>
+              <li><a href="javascript:void(0);" class="phone">16G<span><img src="images/chooseList.png" width="40" height="36" style="display: none"></span></a></li>
+              <li class="margin"><a href="javascript:void(0);" class="phone">32G<span><img src="images/chooseList.png" width="40" height="36" style="display: none"></span></a></li>
+              <!--<li><a href="javascript:void(0);" class="phone">64G<span><img src="images/chooseList.png" width="40" height="36" style="display: none"></span></a></li>-->
           </ul>
       </div>
         <div class="num">

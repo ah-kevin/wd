@@ -14,13 +14,24 @@ a:hover { color:#333; text-decoration: none; }
 .taocan_title{ width: 97%; height: 3.3em; background: #fff; color: #a5a5a5;padding-left: 3%;}
 
 .taocan_info{
-	width:90%;
-	padding-left:5%;
-	line-height:2em;
-	padding-bottom: 5%;
+	position: relative;
+	width: 326px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 2em;
+	padding-bottom: 10px;
 	background: #fff;
+	left: 0;
+	display: inline-block;
+	transition: left 0.5s ease-out;
+	-webkit-transition: left 0.5s ease-out;
+	-moz-transition: left 0.5s ease-out;
+	-ms-transition: left 0.5s ease-out;
 }
-
+.taocaoDetail{
+	width: 100000%;
+	padding:20px 0;
+}
 .small_title{
 	font-size: 1.2em;
 	font-weight: bold;
