@@ -14,6 +14,7 @@ $(function(){
         $(this).addClass('chosce').siblings('.taocan_pro').removeClass('chosce');
 	});
 
+
 	$(".taocan_info").on("swipeLeft",function(){
 		var divs=$(".taocan_pro"),
 			div=divs.eq(0),
