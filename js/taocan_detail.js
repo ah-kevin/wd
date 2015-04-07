@@ -15,6 +15,7 @@ $(function(){
 	});
 
 
+
 	$(".taocan_info").on("swipeLeft",function(){
 		var divs=$(".taocan_pro"),
 			div=divs.eq(0),

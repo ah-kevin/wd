@@ -12,6 +12,7 @@ header h1{ width:80%; text-align:center; font-size:2em; color:#4c4c4d;}
 .content .banner-img{ width:400%;}
 .content .title{ color:#a5a5a5;}
 .content .details{ border: 0.1em solid #CCC;
+
 border-radius: 1em;
 padding: 0.5em;
 margin-bottom: 0.5em;
