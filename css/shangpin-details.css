@@ -3,7 +3,7 @@
 .outer-box{ width:100%; min-width:320px; margin:0 auto;}
 /*header*/
 header{ width:100%; height:auto; padding:1em 0; background:#ffd140;}
-.return,.personal{ width:6%; margin-left:0.8em;}
+.return,.personal{ width:8%; margin-left:0.3em;}
 header div{ width:80%; text-align:center; font-size:2em; color:#4c4c4d;}
 
 /*content*/
@@ -17,4 +17,4 @@ header div{ width:80%; text-align:center; font-size:2em; color:#4c4c4d;}
 .content .inform img{ margin-bottom:2em;}
 .content .inform p{ margin-top:0.5em;}
 
-.content .sure{ position:fixed; left:0; bottom:0; width:100%; text-align:center; color:#424242; font-size:1.3em; background:#ffd140; padding:0.5em 0; margin-top:1em;}
+.content .sure{ position:fixed; left:0; bottom:0; width:100%; text-align:center; color:#424242; font-size:14px; background:#ffd140; padding:0.8em 0; margin-top:1em;}

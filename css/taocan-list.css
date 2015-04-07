@@ -10,14 +10,14 @@ header h1{ width:80%; text-align:center; font-size:2em; color:#4c4c4d;}
 .content{ width:100%; height:100%; font-size:0.8em;line-height: 1.3em;}
 .content nav,.content nav ul{ width:100%;line-height:0.6em}
 .content nav ul li{ width:20%; text-align:center;}
-.content nav ul li a{ display:block; color:#888; padding:1em 0; font-size:1.8em; border-bottom:0.25em solid #e5e5e5;}
+.content nav ul li a{ display:block; color:#888; line-height:2.8em; font-size:1.8em; font-weight:bold; border-bottom:0.25em solid #e5e5e5;}
 .content nav ul li a.cur,.content nav ul li a:hover{ color:#2e2e2e; border-bottom:0.25em solid #5e5e5e;}
 
 .taocan{ position:relative; width:90%; margin:0 auto; padding:0 0.5em;}
 .taocan div{ margin-top:2em;}
 .taocan div p{ font-size:1.5em; color:#a5a5a5;}
-.taocan div p.name{ font-size:2em; color:#6c6c6c;}
-.taocan div a{ display:block; color:#ffd140; padding-top:1em; font-size:2em;}
+.taocan div p.name{ font-size:1.8em; color:#6c6c6c;}
+.taocan div a{ display:block; color:#ffd140; padding-top:0.5em; font-size:1.8em;}
 .taocan img{ position:absolute; left:0; bottom:-1em;}
 
 .con{ margin-top:0.5em;}

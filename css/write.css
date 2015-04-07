@@ -57,8 +57,8 @@ line-height: 2em;}
 .address_icon{
 	float: left;
 line-height: 2em;
-width: 1.5em;
-margin-left: 10%;}
+margin-left: 10%; margin-top:0.5em;
+}
 
 .address{float: left;
 line-height: 2em;}

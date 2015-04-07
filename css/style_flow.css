@@ -46,7 +46,7 @@ body {
 	text-align: center;
 	float: left;
 	width: 100%;
-	line-height: 3vw;
+	line-height: 2vw;
 	margin-top: 2vw;
 	margin-bottom: 2vw;
 }
@@ -88,11 +88,11 @@ body {
 	display: block;
 	width: 100%;
 	color: #a5a5a5;
-	font-size: 5vw;
+	font-size: 4vw;
 	border-bottom-width: 1vw;
 	border-bottom-style: solid;
 	border-bottom-color: #a5a5a5;
-	line-height: 10vw;
+	line-height: 14vw;
 }
 .nav ul li .on {
 	color: #2e2e2e;
@@ -232,7 +232,7 @@ body {
 	margin-top: 3vw;
 }
 .main.width-all {
-	/*margin: 0 0 15em;*/
+	margin: 0 0 15em;
 	padding: 0px;
 	width: 100%;
 }
@@ -252,6 +252,7 @@ body {
 .main.width-all .goods_list li div {
 	float: left;
 	width: 100%;
+	padding-left:2.5%;
 }
 
 .main .goods_list li .price img {
@@ -289,7 +290,8 @@ body {
 	float: left;
 	width: 100%;
 	text-align: left;
-	line-height: 5vw；
+	line-height: 5vw;
+	padding-left:2.5%;
 }
 .main.width-all .goods_list dl dt .goods_name {
 	font-size: 3.5vw;
@@ -300,6 +302,7 @@ body {
 	text-align: left;
 	text-overflow: ellipsis;
 	overflow: hidden;
+	padding-left:2.5%;
 }
 
 
