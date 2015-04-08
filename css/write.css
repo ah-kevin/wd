@@ -2,16 +2,15 @@
 /*outer-box*/
 .outer-box{ width:100%; min-width:320px; margin:0 auto;}
 /*header*/
-header{ width:100%; height:auto; padding:1em 0; background:#ffd140;}
+/*header{ width:100%; height:auto; padding:1em 0; background:#ffd140;}*/
 .return,.personal{ width:7.77778%; margin-left:0.5em;}
-header h1{ width:80%; text-align:center; font-size:2em; color:#4c4c4d;}
-
+/*header h1{ width:80%; text-align:center; font-size:2em; color:#4c4c4d;}*/／
 /*content*/
 .content{ width:88%; font-size:1.5em; color:#545454; margin:1em auto 0; }
 .content .content-title{ width:96%; padding:0 2% 0; border-bottom:1px solid #d9d9d9;}
 .content .content-title div{ width:10%;}
 .content .content-title span{ width:80%; margin-left:3%; font-size:1em; color:#424242;}
-.content .number{ width:96%;;padding: 0.8em 1% 0 1%;height: 2em;}
+.content .number{ width:96%;;padding: 0.8em 1% 0 1%;}
 .content .number .Num{ width:85%; font-size:0.8em; }
 
 .content .taocan{ margin-left:2em; font-size:0.8em; color:#424242; line-height: 1.1em;}
