@@ -48,7 +48,7 @@ height: 2px;}
 
 /*页头*/
 .header{ text-align:center; margin:0px auto; background:#fed04f; width:100%;height:51px;position:relative}
-.header .title{height:51px;line-height:51px;color:white;font-size:20px;}
+.header .title{height:51px;line-height:51px;color:#424242;font-size:20px;}
 .to-left{
 	z-index:8000;
 	position: absolute;
@@ -77,15 +77,23 @@ margin-bottom: 2%;}
 .show{position:absolute;
 padding-top: 3px;}
 .close{position: absolute;top:10%;left: 8%;}
-.huobi{position: absolute;top:10%;left: 25%;}
-.phone{position: absolute;top:10%;left: 45%;}
-.pingluo{position: absolute;top:10%;left: 65%;}
-.sou{position: absolute;top:10%;left: 85%;}
+.huobi{position: absolute;top:0%;left: 25%;}
+.phone{position: absolute;top:6%;left: 45%;}
+.pingluo{position: absolute;top:-2%;left: 65%;}
+.sou{position: absolute;top:0%;left: 85%;}
 .box-r{float:right;display: block;width: 45%;
 	line-height: 28px;
 	  
-}  
-
+}
+.header .info{
+	position: absolute;
+	right: 0%;
+	top: 10px;
+}
+.header .info img{
+	height: auto;
+	width: 25px;
+}
 .hide{
 	display:none;
 }

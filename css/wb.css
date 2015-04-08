@@ -169,7 +169,7 @@ width: 60%;
 
 
 /*王斌修改：选择号码*/
-.haoma{ border-top: 0.3em solid #d8d8d8; width:96%; padding:0 2% 10px 2%; background:#fafafa;}
+.haoma{ border-top: 0.3em solid #d8d8d8; width:96%; padding:0 0 10px 0; background:#fafafa;}
 .haoma .single{ border-left:1px solid #fafafa;border-bottom:1px solid #e3e3e3; float:left; display:inline; width:49.0%; height:3.3em; padding:0.5em 0; line-height:3.3em; text-align:center; font-size:0.9em; position:relative;}
 .haoma .rightline{}
 .haoma .active { background:#dfdddd}
