@@ -49,7 +49,7 @@ $(function(){
                 for(var i=0,le=th.length;i<le;i++){
                 $(th[i]).css("left","0px");
             }
-        },10);
+        },1000);
         }
 
         function nstSlider(ns,la,span){

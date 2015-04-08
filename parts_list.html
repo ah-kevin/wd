@@ -8,12 +8,20 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <link href="css/style_flow.css" rel="stylesheet" type="text/css">
+    <link href="css/nb.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.fly.min.js"></script>
     <script src="js/requestAnimationFrame.js"></script>
     <script src="js/base.js"></script>
     <style>
-        .u-flyer{display: block;width: 50px;height: 50px;border-radius: 50px;position: fixed;z-index: 9999;}
+        .u-flyer {
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            position: fixed;
+            z-index: 9999;
+        }
     </style>
 </head>
 
@@ -62,7 +70,7 @@
                     height: 0
                 },
                 onEnd: function () {
-                    var num=$("#msg").text();
+                    var num = $("#msg").text();
                     num++;
                     $("#msg").text(num);
                     this.destory();
@@ -81,8 +89,8 @@
         <span class="txt">商品列表</span>
         <span class="info">
             <a href="admin/cart.html">
-            <img src="images/lcon_head.png" width="52" height="59">
-        </a>
+                <img src="images/lcon_head.png" width="52" height="59">
+            </a>
         </span>
 
     </div>
@@ -99,87 +107,47 @@
 </nav>
 <!--详情列表-->
 <section class="main">
-    <dl class="left">
+    <div class="layout-left">
+        <dl class="left parts-w">
+            <dt><a href="parts_details.html"> <img src="images/20150326_10.png" width="278" height="304"> </a></dt>
+            <dd><span class="info_name">苹果iphone6(1234)64G金色移动联通电信4G</span>
 
-        <dt>
-            <a href="parts_details.html">
-            <img src="images/20150326_11.png" width="278" height="304">
-            </a>
-        </dt>
+                <div class="inf0_price"><b>￥4899.00</b> </div>
+            </dd>
+        </dl>
+        <dl class="left  parts-w">
+            <dt><a href="parts_details.html"> <img src="images/20150326_12.png" width="278" height="304"> </a></dt>
+            <dd><span class="info_name">苹果iphone6(1234)64G金色移动联通电信4G</span>
 
-        <dd>
-            <span class="info_name">苹果iphone6(1234)64G金色移动联通电信4G</span>
-
-            <div class="inf0_price"><b>￥4899.00</b>
-                <span class="addcar"><img src="images/lcon_cart1.png" width="52" height="45"></span>
+                <div class="inf0_price"><b>￥4899.00</b></div>
+            </dd>
+        </dl>
+    </div>
+    <div class="layout-right">
+        <dl class="left parts-w">
+            <dt>
+            <div class="price">
+                <div>
+                    <span>直降200</span>
+                    <img src="images/price.png">
+                </div>
             </div>
+            <a href="parts_details.html"> <img src="images/20150326_11.png" width="278" height="304"> </a> </dt>
+            <dd><span class="info_name" style="margin-top:5vw;">苹果iphone6(1234)64G金色移动联通电信4G</span>
+                <div class="inf0_price"><b>￥4899.00</b></div>
 
-        </dd>
-    </dl>
-    <dl class="right">
+            </dd>
+        </dl>
 
+        <dl class="left  parts-w">
+            <dt><a href="parts_details.html"> <img src="images/20150326_13.png" width="278" height="304"> </a></dt>
+            <dd><span class="info_name">苹果iphone6(1234)64G金色移动联通电信4G</span>
 
-        <dt>
-            <a href="parts_details.html">
-            <img src="images/20150326_10.png" width="278" height="304">
-            </a>
-        </dt>
-
-        <dd>
-            <span class="info_name">苹果iphone6(1234)64G金色移动联通电信4G</span>
-
-            <div class="inf0_price"><b>￥4899.00</b>
-                <span class="addcar"><img src="images/lcon_cart1.png" width="52" height="45"></span></div>
-
-        </dd>
-    </dl>
-    <dl class="left">
-
-        <dt>
-            <a href="parts_details.html">
-            <img src="images/20150326_12.png" width="278" height="304">
-        </a>
-        </dt>
-
-        <dd>
-            <span class="info_name">苹果iphone6(1234)64G金色移动联通电信4G</span>
-
-            <div class="inf0_price"><b>￥4899.00</b>
-                <span class="addcar"><img src="images/lcon_cart1.png" width="52" height="45"></span></div>
-
-        </dd>
-    </dl>
-    <dl class="right">
-
-        <dt>
-            <a href="parts_details.html">
-            <img src="images/20150326_13.png" width="278" height="304">
-        </a>
-        </dt>
-        <dd>
-            <span class="info_name">苹果iphone6(1234)64G金色移动联通电信4G</span>
-
-            <div class="inf0_price"><b>￥4899.00</b>
-                <span class="addcar"><img src="images/lcon_cart1.png" width="52" height="45"></span></div>
-
-        </dd>
-    </dl>
-    <dl class="left">
-        <dt>
-            <a href="parts_details.html">
-            <img src="images/20150326_11.png" width="278" height="304">
-        </a>
-        </dt>
-
-        <dd>
-            <span class="info_name">苹果iphone6(1234)64G金色移动联通电信4G</span>
-
-            <div class="inf0_price"><b>￥4899.00</b>
-                <span class="addcar"><img src="images/lcon_cart1.png" width="52" height="45"></span>
-            </div>
-
-        </dd>
-    </dl>
+                <div class="inf0_price"><b>￥4899.00</b>
+                </div>
+            </dd>
+        </dl>
+    </div>
 </section>
 <div class="empty" style=" float:left; width:100%; height:15em;"></div>
 <!--页脚菜单-->
@@ -187,9 +155,8 @@
     <ul>
         <li><a href="#">推荐</a></li>
         <li><a href="#">品牌</a></li>
-        <li><a href="#">热点</a></li>
         <li><a href="#">价格</a></li>
-        <li><a href="#">屏幕</a></li>
+        <li><a href="#">内存</a></li>
     </ul>
 </footer>
 
@@ -197,10 +164,6 @@
 <div class="top">
 
     <span class="get_top" id="get_top"></span>
-    <span class="cart_now">
-    	<img src="images/lcon_cart2.png" alt="购物车" width="100%" id="end" />
-        <span id="msg">6</span>
-    </span>
 </div>
 </body>
 </html>

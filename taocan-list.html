@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <link rel="stylesheet" type="text/css" href="css/taocan-list.css">
      <link href="css/public.css" rel="stylesheet" type="text/css" />
+     <link href="css/nb.css" rel="stylesheet" type="text/css" />
     <script src="js/jquery-1.11.1.min.js"></script>
     <script>
 	  (function(){
@@ -44,28 +45,33 @@
   <body>
 	<div class="outer-box">
     	<!--head-->
-    	<div class="header">
-			<a href="index.html">
-				<img class="to-left" src="images/back.png" width="8%" />
-			</a>
-				<div class="title">合约</div>
-			<a href="admin/cart.html">
-				<img class="to-right" src="images/man.png" width="8%" />
+		<!--页头-->
+		<header class="header">
+			<div class="title">
+				<a href="index.html"><span class="back"><img src="images/lcon_back.png" width="58" height="58"></span>
 				</a>
-				<div class="clear"></div>
-			</div> 
+				<span class="txt">合约</span>
+        <span class="info">
+            <a href="admin/cart.html">
+				<img src="images/lcon_head.png" width="52" height="59">
+			</a>
+        </span>
+
+			</div>
+		</header>
+		<!--导航-->
+		<nav class="nav">
+			<ul>
+				<li><a href="goods_list.html" >手机</a></li>
+				<li><a href="parts_list.html">配件</a></li>
+				<li><a href="taocan-list.html"class="on">合约</a></li>
+				<li><a href="number.html">号码</a></li>
+				<li><a href="shangpin-list.html">宽带</a></li>
+			</ul>
+		</nav>
         <!--content-->
-        <div class="content">
-        	<!--导航-->
-        	<nav>
-				  	<ul class="clearfix">
-				      	<li class="left"><a href="goods_list.html" target="_blank">手机</a></li>
-				          <li class="left"><a href="parts_list.html" target="_blank">配件</a></li>
-				          <li class="left"><a class="cur" href="#">合约</a></li>
-				          <li class="left"><a href="number.html" target="_blank">号码</a></li>
-				          <li class="left"><a href="shangpin-list.html" target="_blank">宽带</a></li>
-				      </ul>
-				  </nav>
+        <div class="content" style="overflow: hidden">
+
             <!--套餐-->
             <div class="taocan clearfix ">
             	<div class="left">
