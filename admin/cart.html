@@ -1,221 +1,224 @@
 <!DOCTYPE html>
 
 <head>
-<meta charset="utf-8" />
-<title>购物车</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="format-detection" content="telephone=no">
-<link href="css/style_info.css" rel="stylesheet" type="text/css">
-<script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/base.js"></script>
+    <meta charset="utf-8" />
+    <title>购物车</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/style_info.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/base.js"></script>
     <style>
-        i{
+        i {
             font-style: normal;
         }
     </style>
-<script>
-//$(function(){
-//    $('.main .cart').click(function(){
-//			$('.main .circle').removeClass('chose') ;
-//        $(this).find("dt").find("span").addClass('chose');
-//    });
-//});
-</script>
-<script type="text/ecmascript">
+    <script>
+        //$(function(){
+        //    $('.main .cart').click(function(){
+        //			$('.main .circle').removeClass('chose') ;
+        //        $(this).find("dt").find("span").addClass('chose');
+        //    });
+        //});
+    </script>
+    <script type="text/ecmascript">
         $(function () {
             $(".main .cart dt .img .yes").hide();
             $(".main .cart").click(function () {
                 $(this).find('dt .img .yes').toggle().siblings().toggle();
-            })
+            });
 
         })
-</script>
+    </script>
 </head>
 <body>
 <!--页头-->
 <header class="header">
-  <div class="welcome">13522087071欢迎回家！</div>
-  <div class="title">
-  	<span class="name"><b>My store</b> 中国电信微店</span>
-    <span class="delete"><img src="image/lcon_delete.png" width="45" height="50"></span>
-  </div>
+    <div class="welcome">13522087071欢迎回家！</div>
+    <div class="title">
+        <span class="name"><b>My store</b> 中国电信微店</span>
+        <span class="delete"><img src="image/lcon_delete.png" width="45" height="50"></span>
+    </div>
 </header>
 <!--左边导航-->
 <nav class="nav">
-  <ul>
-    <li><a href="#"><img src="image/lcon_back.png" width="100%" /></a></li>
-    <li><a href="#" class="on"><img src="image/lcon_cartOn.png" width="100%" /><span>购物车</span></a></li>
-    <li><a href="order_details.html"><img src="image/lcon_list.png" width="100%" /><span>订单</span></a></li>
-    <li><a href="order_list.html"><img src="image/lcon_order.png" width="100%" /><span>预约单</span></a></li>
-    <li><a href="collect.html"><img src="image/lcon_collect.png" width="100%" /><span>收藏店铺</span></a></li>
-  </ul>
-  <div class="more"><a><span><img src="image/lcon_more.png" width="56" height="56"></span></a></div>
+    <ul>
+        <li><a href="#"><img src="image/lcon_back.png" width="100%" /></a></li>
+        <li><a href="#" class="on"><img src="image/lcon_cartOn.png" width="100%" /><span>购物车</span></a></li>
+        <li><a href="order_details.html"><img src="image/lcon_list.png" width="100%" /><span>订单</span></a></li>
+        <li><a href="order_list.html"><img src="image/lcon_order.png" width="100%" /><span>预约单</span></a></li>
+        <li><a href="collect.html"><img src="image/lcon_collect.png" width="100%" /><span>收藏店铺</span></a></li>
+    </ul>
+    <div class="more"><a><span><img src="image/lcon_more.png" width="56" height="56"></span></a></div>
 </nav>
 <!--右边购物车列表-->
 <section class="main">
-	<dl class="cart">
-    	<dt>
-        	<div class="img">
-                <img class="no" src="image/no1.png" alt="未选中" width="100%" /> 
-                <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
-            </div>
-        	<img src="image/20150325_1.png" width="100%" /> 
+    <dl class="cart">
+        <dt>
+        <div class="img">
+            <img class="no" src="image/no1.png" alt="未选中" width="100%" />
+            <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
+        </div>
+        <img src="image/20150325_1.png" width="100%" />
         </dt>
         <dd>
-        	<span class="prise">￥300</span>
-            <span class="name">自拍神器</span>
-        </dd>
-    </dl>
-  <dl class="cart">
-    	<dt>
-        	<div class="img">
-                  <img class="no" src="image/no1.png" alt="未选中" width="100%" /> 
-                  <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
-            </div>
-        	<img src="image/20150325_2.png" width="100%" /> 
-        </dt>
-        <dd>
-        	<span class="prise">￥300</span>
-            <span class="name">自拍神器</span>
-        </dd>
-    </dl>
-    <dl class="cart right">
-    	<dt>
-        	<div class="img">
-                <img class="no" src="image/no1.png" alt="未选中" width="100%" /> 
-                <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
-            </div>
-        	<img src="image/20150325_3.png" width="100%" /> 
-        </dt>
-        <dd>
-        	<span class="prise">￥300</span>
+            <span class="prise">￥300</span>
             <span class="name">自拍神器</span>
         </dd>
     </dl>
     <dl class="cart">
-    	<dt>
-        	<div class="img">
-                <img class="no" src="image/no1.png" alt="未选中" width="100%" /> 
-                <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
-            </div>
-        	<img src="image/20150325_1.png" width="100%" /> 
+        <dt>
+        <div class="img">
+            <img class="no" src="image/no1.png" alt="未选中" width="100%" />
+            <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
+        </div>
+        <img src="image/20150325_2.png" width="100%" />
         </dt>
         <dd>
-        	<span class="prise">￥300</span>
-            <span class="name">自拍神器</span>
-        </dd>
-    </dl>
-  <dl class="cart">
-    	<dt>
-        	<div class="img">
-                <img class="no" src="image/no1.png" alt="未选中" width="100%" /> 
-                <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
-            </div>
-        	<img src="image/20150325_1.png" width="100%" /> 
-        </dt>
-        <dd>
-        	<span class="prise">￥300</span>
+            <span class="prise">￥300</span>
             <span class="name">自拍神器</span>
         </dd>
     </dl>
     <dl class="cart right">
-    	<dt>
-        	<div class="img">
-                <img class="no" src="image/no1.png" alt="未选中" width="100%" /> 
-                <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
-            </div>
-        	<img src="image/20150325_1.png" width="100%" /> 
+        <dt>
+        <div class="img">
+            <img class="no" src="image/no1.png" alt="未选中" width="100%" />
+            <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
+        </div>
+        <img src="image/20150325_3.png" width="100%" />
         </dt>
         <dd>
-        	<span class="prise">￥300</span>
+            <span class="prise">￥300</span>
             <span class="name">自拍神器</span>
         </dd>
     </dl>
     <dl class="cart">
-    	<dt>
-        	<div class="img">
-                <img class="no" src="image/no1.png" alt="未选中" width="100%" /> 
-                <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
-            </div>
-        	<img src="image/20150325_1.png" width="100%" /> 
+        <dt>
+        <div class="img">
+            <img class="no" src="image/no1.png" alt="未选中" width="100%" />
+            <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
+        </div>
+        <img src="image/20150325_1.png" width="100%" />
         </dt>
         <dd>
-        	<span class="prise">￥300</span>
-            <span class="name">自拍神器</span>
-        </dd>
-    </dl>
-  <dl class="cart">
-    	<dt>
-        	<div class="img">
-                <img class="no" src="image/no1.png" alt="未选中" width="100%" /> 
-                <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
-            </div>
-        	<img src="image/20150325_1.png" width="100%" /> 
-        </dt>
-        <dd>
-        	<span class="prise">￥300</span>
-            <span class="name">自拍神器</span>
-        </dd>
-    </dl>
-    <dl class="cart right">
-    	<dt>
-        	<div class="img">
-                <img class="no" src="image/no1.png" alt="未选中" width="100%" /> 
-                <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
-            </div>
-        	<img src="image/20150325_1.png" width="100%" /> 
-        </dt>
-        <dd>
-        	<span class="prise">￥300</span>
+            <span class="prise">￥300</span>
             <span class="name">自拍神器</span>
         </dd>
     </dl>
     <dl class="cart">
-    	<dt>
-        	<div class="img">
-                <img class="no" src="image/no1.png" alt="未选中" width="100%" /> 
-                <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
-            </div>
-        	<img src="image/20150325_1.png" width="100%" /> 
+        <dt>
+        <div class="img">
+            <img class="no" src="image/no1.png" alt="未选中" width="100%" />
+            <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
+        </div>
+        <img src="image/20150325_1.png" width="100%" />
         </dt>
         <dd>
-        	<span class="prise">￥300</span>
-            <span class="name">自拍神器</span>
-        </dd>
-    </dl>
-  <dl class="cart">
-    	<dt>
-        	<div class="img">
-                <img class="no" src="image/no1.png" alt="未选中" width="100%" /> 
-                <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
-            </div>
-        	<img src="image/20150325_1.png" width="100%" /> 
-        </dt>
-        <dd>
-        	<span class="prise">￥300</span>
+            <span class="prise">￥300</span>
             <span class="name">自拍神器</span>
         </dd>
     </dl>
     <dl class="cart right">
-    	<dt>
-        	<div class="img">
-                <img class="no" src="image/no1.png" alt="未选中" width="100%" /> 
-                <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
-            </div>
-        	<img src="image/20150325_1.png" width="100%" /> 
+        <dt>
+        <div class="img">
+            <img class="no" src="image/no1.png" alt="未选中" width="100%" />
+            <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
+        </div>
+        <img src="image/20150325_1.png" width="100%" />
         </dt>
         <dd>
-        	<span class="prise">￥300</span>
+            <span class="prise">￥300</span>
+            <span class="name">自拍神器</span>
+        </dd>
+    </dl>
+    <dl class="cart">
+        <dt>
+        <div class="img">
+            <img class="no" src="image/no1.png" alt="未选中" width="100%" />
+            <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
+        </div>
+        <img src="image/20150325_1.png" width="100%" />
+        </dt>
+        <dd>
+            <span class="prise">￥300</span>
+            <span class="name">自拍神器</span>
+        </dd>
+    </dl>
+    <dl class="cart">
+        <dt>
+        <div class="img">
+            <img class="no" src="image/no1.png" alt="未选中" width="100%" />
+            <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
+        </div>
+        <img src="image/20150325_1.png" width="100%" />
+        </dt>
+        <dd>
+            <span class="prise">￥300</span>
+            <span class="name">自拍神器</span>
+        </dd>
+    </dl>
+    <dl class="cart right">
+        <dt>
+        <div class="img">
+            <img class="no" src="image/no1.png" alt="未选中" width="100%" />
+            <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
+        </div>
+        <img src="image/20150325_1.png" width="100%" />
+        </dt>
+        <dd>
+            <span class="prise">￥300</span>
+            <span class="name">自拍神器</span>
+        </dd>
+    </dl>
+    <dl class="cart">
+        <dt>
+        <div class="img">
+            <img class="no" src="image/no1.png" alt="未选中" width="100%" />
+            <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
+        </div>
+        <img src="image/20150325_1.png" width="100%" />
+        </dt>
+        <dd>
+            <span class="prise">￥300</span>
+            <span class="name">自拍神器</span>
+        </dd>
+    </dl>
+    <dl class="cart">
+        <dt>
+        <div class="img">
+            <img class="no" src="image/no1.png" alt="未选中" width="100%" />
+            <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
+        </div>
+        <img src="image/20150325_1.png" width="100%" />
+        </dt>
+        <dd>
+            <span class="prise">￥300</span>
+            <span class="name">自拍神器</span>
+        </dd>
+    </dl>
+    <dl class="cart right">
+        <dt>
+        <div class="img">
+            <img class="no" src="image/no1.png" alt="未选中" width="100%" />
+            <img class="yes" src="image/chooseOn.png" alt="选中" width="100%" />
+        </div>
+        <img src="image/20150325_1.png" width="100%" />
+        </dt>
+        <dd>
+            <span class="prise">￥300</span>
             <span class="name">自拍神器</span>
         </dd>
     </dl>
 </section>
 <script>
     $(".delete").click(function () {
-       $(".footer_edit").fadeToggle("3000");
+        $(".footer_edit").fadeToggle("3000");
     });
+    $('.more').click(function () {
+        $(".footer_can").fadeToggle("3000");
+    })
 </script>
 <!--弹窗页脚-->
 <footer class="footer_edit" style="display: none">
@@ -226,6 +229,20 @@
     <span class="delete"><a href="#"><img src="image/lcon_deleteGig.png" width="139" height="150"></a> </span>
 </footer>
 
+<!-- 弹窗功能包-->
+<footer class="footer_can" style="display: none">
+    <ul>
+        <a href="../can/yh-cash.html">
+            <li><img src="image/k1.png" alt="" /></li>
+        </a>
+        <li><img src="image/k2.png" alt="" /></li>
+        <a href="../can/yue.html">
+            <li><img src="image/k3.png" alt="" /></li>
+        </a>
+        <a href="../can/liuliang.html">
+            <li><img src="image/k4.png" alt="" /></li>
+        </a></ul>
+</footer>
 <!--弹窗页脚 支付-->
 <footer class="footer_sure" style="display: none;">
     <div class="cart_details">

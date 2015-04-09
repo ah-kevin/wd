@@ -265,10 +265,34 @@ body {
 	width: 82%;
 	bottom: 0px;
 }
+.footer_can {
+	opacity: 0.75;
+	background-color: #34373d;
+	position: fixed;
+	right: 0px;
+	height: 10%;
+	width: 82%;
+	bottom: 0px;
+}
+.footer_can ul{
+	/*float: left;*/
+	width: 100%;
+	overflow: hidden;
+	margin-left: 7%;
+}
+.footer_can ul li{
+	width: 25%;
+	float: left;
+	padding: 6% 0;
+}
 .footer_edit ul {
 	float: left;
 	width: 100%;
 	margin-top: 5%;
+	height: 100%;
+}
+.footer_can ul img{
+	width: 42%;
 }
 .footer_edit ul li {
 	width: 50%;

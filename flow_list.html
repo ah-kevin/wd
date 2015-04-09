@@ -113,13 +113,44 @@
 </section>
 <!--页脚菜单-->
 <footer class="footer_flow">
-	<ul>
+    <div class="any" style="display: none">
+        <img src="images/x.png" class="xx"/>
+        <ul>
+            <li><a href="#" style="color: #f4c941">全部:</a></li>
+            <li><a href="#">苹果</a></li>
+            <li><a href="#">苹果</a></li>
+            <li><a href="#">苹果</a></li>
+            <li><a href="#">苹果</a></li>
+            <li><a href="#">苹果果</a></li>
+            <li><a href="#">苹果</a></li>
+            <li><a href="#">苹果</a></li>
+            <li><a href="#">苹果</a></li>
+            <li><a href="#">苹果果</a></li>
+            <li><a href="#">苹果果</a></li>
+            <li><a href="#">苹果果</a></li>
+            <li><a href="#">苹果</a></li>
+
+        </ul>
+    </div>
+    <ul >
         <li><a href="#">推荐</a></li>
-        <li><a href="#">品牌</a></li>
+        <li style="position: relative">
+            <img id="jt" src="images/jt.png" alt="" style="position: absolute;width: 14%;top: 0;left: 42%;display: none" />
+            <a href="#" id="pp">品牌</a></li>
         <li><a href="#">价格</a></li>
-        <li><a href="#">内存</a></li>
+        <li><a href="#">热点</a></li>
     </ul>
 </footer>
+<script>
+    $('#pp').click(function () {
+        $('.any').fadeToggle('3000');
+        $('#jt').toggle();
+    })
+    $('.xx').click(function () {
+        $('.any').hide();
+        $('#jt').hide();
+    })
+</script>
 <!--返回顶部-->
 <div class="top">
     <span class="get_top" id="get_top"></span>
