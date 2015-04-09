@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
@@ -10,139 +10,151 @@
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/base.js"></script>
     <script type="text/javascript">
-    	$(function(){
-			$(".award").hide();
-			$(".attation").hide();
-			$(".yh-cont .choice .talk .no").click(function(){
-				$(this).siblings(".yes").show();
-				$(".yh-cont .choice .liuliang .yes").hide();
-				$(".award").show();
-				$(".attation").hide();
-				});/*网银充值话费充值*/
-			$(".yh-cont .choice .liuliang .no").click(function(){
-				$(this).siblings(".yes").show();
-				$(".yh-cont .choice .talk .yes").hide();
-				$(".attation").show();
-				$(".award").hide();
-				});/*网银充值流量充值*/
-			$(".cz-card .choice .talk .no").click(function(){
-				$(this).siblings(".yes").show();
-				$(".cz-card .choice .liuliang .yes").hide();
-				$(".award").show();
-				$(".attation").hide();
-				});/*充值卡充值话费充值*/
-			$(".cz-card .choice .liuliang .no").click(function(){
-				$(this).siblings(".yes").show();
-				$(".cz-card .choice .talk .yes").hide();
-				$(".attation").show();
-				$(".award").hide();
-				});/*充值卡充值流量充值*/
-			$(".yh-cont .Value div").click(function(){
-				$(this).css({"border-color":"#fed04f","background":"none","color":"#fed04f"}).find("img").show();
-				$(this).siblings().css({"border-color":"#b4b4b4","background":"#f7f7f7","color":"#272727"}).find("img").hide();
-				});/*充值金额选择*/
-			/*提示内容*/
-			$(".content .cz-card").hide();
-			$(".content .cont-title .cz-cash").css({"background":"#f7f7f7","border-bottom":"1px solid #d6d6d6","border-left":"1px solid #d6d6d6"})
-			$(".content .cont-title .yh-cash").click(function(){
-				$(".content .cont-title .cz-cash").css({"background":"#f7f7f7","border-bottom":"1px solid #d6d6d6","border-left":"1px solid #d6d6d6"});
-				$(this).css({"background":"none","border":"none"});
-				$(".content .yh-cont").show();
-				$(".content .cz-card").hide();
-				});
-			$(".content .cont-title .cz-cash").click(function(){
-				$(".content .cont-title .yh-cash").css({"background":"#f7f7f7","border-bottom":"1px solid #d6d6d6","border-right":"1px solid #d6d6d6"});
-				$(this).css({"background":"none","border":"none"});
-				$(".content .cz-card").show();
-				$(".content .yh-cont").hide();
-				});
-			})
+        $(function () {
+            $(".award").hide();
+            $(".attation").hide();
+            $(".yh-cont .choice .talk .no").click(function () {
+                $(this).siblings(".yes").show();
+                $(".yh-cont .choice .liuliang .yes").hide();
+                $(".award").show();
+                $(".attation").hide();
+            });
+            /*网银充值话费充值*/
+            $(".yh-cont .choice .liuliang .no").click(function () {
+                $(this).siblings(".yes").show();
+                $(".yh-cont .choice .talk .yes").hide();
+                $(".attation").show();
+                $(".award").hide();
+            });
+            /*网银充值流量充值*/
+            $(".cz-card .choice .talk .no").click(function () {
+                $(this).siblings(".yes").show();
+                $(".cz-card .choice .liuliang .yes").hide();
+                $(".award").show();
+                $(".attation").hide();
+            });
+            /*充值卡充值话费充值*/
+            $(".cz-card .choice .liuliang .no").click(function () {
+                $(this).siblings(".yes").show();
+                $(".cz-card .choice .talk .yes").hide();
+                $(".attation").show();
+                $(".award").hide();
+            });
+            /*充值卡充值流量充值*/
+            $(".yh-cont .Value div").click(function () {
+                $(this).css({"border-color": "#fed04f", "background": "none", "color": "#fed04f"}).find("img").show();
+                $(this).siblings().css({"border-color": "#b4b4b4", "background": "#f7f7f7", "color": "#272727"}).find("img").hide();
+            });
+            /*充值金额选择*/
+            /*提示内容*/
+            $(".content .cz-card").hide();
+            $(".content .cont-title .cz-cash").css({"background": "#f7f7f7", "border-bottom": "1px solid #d6d6d6", "border-left": "1px solid #d6d6d6"})
+            $(".content .cont-title .yh-cash").click(function () {
+                $(".content .cont-title .cz-cash").css({"background": "#f7f7f7", "border-bottom": "1px solid #d6d6d6", "border-left": "1px solid #d6d6d6"});
+                $(this).css({"background": "none", "border": "none"});
+                $(".content .yh-cont").show();
+                $(".content .cz-card").hide();
+            });
+            $(".content .cont-title .cz-cash").click(function () {
+                $(".content .cont-title .yh-cash").css({"background": "#f7f7f7", "border-bottom": "1px solid #d6d6d6", "border-right": "1px solid #d6d6d6"});
+                $(this).css({"background": "none", "border": "none"});
+                $(".content .cz-card").show();
+                $(".content .yh-cont").hide();
+            });
+        })
     </script>
-  </head>
-  <body>
-	<div class="outer-box">
-    	<!--head-->
-    	<header class="clearfix">
-				<a href="../index.html">
+</head>
+<body>
+<div class="outer-box">
+    <!--head-->
+    <header class="clearfix">
+        <a href="../index.html">
             <img class="return left" src="images/L-return.png" alt="返回" />
-                </a>
-				<div class="title left">电信微店</div>
-            <a href="../admin/cart.html">
-				<img class="personal left" src="images/personal.png" alt="个人中心" />
-            </a>
-        </header>
-        <!--content-->
-        <div class="content">
-        	<!--标题-->
-        	<div class="cont-title clearfix">
-            	<div class="yh-cash left">网银充值</div>
-                <div class="cz-cash left">充值卡充值</div>
-            </div>
-            <!--充值号码-->
-            <form class="public" action="#" method="post">
-                <p class="clearfix"><img class="left" src="images/tel2.png" alt="请填入充值号码" width="100%" /><span class="left">请填入充值号码:</span></p>
-                <p><input type="text" /></p>
-            </form>
-            <!--银行卡充值-->
-            <div class="yh-cont">
-                <div class="choice clearfix">
-                    <div class="left clearfix talk">
-                        <img class="no left" src="images/no2.png" alt="未选中" />
-                        <img class="yes left" src="images/yes2.png" alt="选中" />
-                        <span class="left">充值话费</span>
-                    </div>
-                    <div class="left clearfix liuliang">
-                        <img class="no left" src="images/no2.png" alt="未选中" />
-                        <img class="yes left" src="images/yes2.png" alt="选中" />
-                        <span class="left">充值流量</span>
-                    </div>
-                </div>
-                <div class="Value clearfix">
-                	<div class="left"><span>10元</span><img src="images/checked.png" alt="选择" /></div>
-                    <div class="left mid"><span>50元</span><img src="images/checked.png" alt="选择" /></div>
-                    <div class="left"><span>100元</span><img src="images/checked.png" alt="选择" /></div>
-                </div>
-                <div class="sep"></div>
-            </div>
-            <!--充值卡充值-->
-            <div class="cz-card">
-              <form action="#" method="post">
-                <p class="clearfix"><img class="left" src="images/cash-id.png" alt="请填入18位充值卡卡号" width="100%" /><span class="left">请填入18位充值卡卡号:</span></p>
-                <p><input type="text" /></p>
-            </form>
-             <div class="choice clearfix">
-                    <div class="left clearfix talk">
-                        <img class="no left" src="images/no2.png" alt="未选中" />
-                        <img class="yes left" src="images/yes2.png" alt="选中" />
-                        <span class="left">充值话费</span>
-                    </div>
-                    <div class="left clearfix liuliang">
-                        <img class="no left" src="images/no2.png" alt="未选中" />
-                        <img class="yes left" src="images/yes2.png" alt="选中" />
-                        <span class="left">充值流量</span>
-                    </div>
-                </div>
-                <div class="sep"></div>
-            </div>
-            <!--订单详情-->
-            <div class="dd-details">
-                <div class="top clearfix">
-                    <img class="left" src="images/dingdan-details.png" alt="订单详情" />
-                    <span class="left">订单详情:</span>
-                </div>
-                <p>尊敬的用户：您于选择银行卡充值话费（自动到账）</p>
-                <p>充值手机号码：18612434902</p>
-                <p>充值金额：30元</p>
-            </div>
-            <div class="attation">
-            	<div class="at-top clearfix"><img class="left" src="images/gantan_icon.png" alt="提示" /><span class="left">温馨提示</span></div>
-                <p>1.仅支持手机上网按流量计费的用户进行充值。</p>
-                <p>2.流量仅限充值手机号码使用，有效期自充值之日起90日内有效。</p>
-            </div>
-            <div class="award"><a href="#2" title="刮奖">充值满30元 （充值卡充话费除外）还能刮大奖！>></a></div>
-            <footer><a href="#2">确认充值</a></footer>
-            <img src="images/fixed-bottom.png" alt="" width="100%" style="position:fixed; bottom:0;" />
+        </a>
+
+        <div class="title left">电信微店</div>
+        <a href="../admin/cart.html">
+            <img class="personal left" src="images/personal.png" alt="个人中心" />
+        </a>
+    </header>
+    <!--content-->
+    <div class="content">
+        <!--标题-->
+        <div class="cont-title clearfix">
+            <div class="yh-cash left">网银充值</div>
+            <div class="cz-cash left">充值卡充值</div>
         </div>
+        <!--充值号码-->
+        <form class="public" action="#" method="post">
+            <p class="clearfix"><img class="left" src="images/tel2.png" alt="请填入充值号码" width="100%" /><span class="left">请填入充值号码:</span></p>
+
+            <p><input type="text" /></p>
+        </form>
+        <!--银行卡充值-->
+        <div class="yh-cont">
+            <div class="choice clearfix">
+                <div class="left clearfix talk">
+                    <img class="no left" src="images/no2.png" alt="未选中" />
+                    <img class="yes left" src="images/yes2.png" alt="选中" style="display: block"/>
+                    <span class="left">充值话费</span>
+                </div>
+                <div class="left clearfix liuliang">
+                    <img class="no left" src="images/no2.png" alt="未选中" />
+                    <img class="yes left" src="images/yes2.png" alt="选中" />
+                    <span class="left">充值流量</span>
+                </div>
+            </div>
+            <div class="Value clearfix">
+                <div class="left"><span>10元</span><img src="images/checked.png" alt="选择" /></div>
+                <div class="left mid" style="border-color: rgb(254, 208, 79);color: rgb(254, 208, 79);
+  background: none;"><span>50元</span><img src="images/checked.png" alt="选择" style="display: block"/></div>
+                <div class="left"><span>100元</span><img src="images/checked.png" alt="选择" /></div>
+            </div>
+            <div class="sep"></div>
+        </div>
+        <!--充值卡充值-->
+        <div class="cz-card">
+            <form action="#" method="post">
+                <p class="clearfix"><img class="left" src="images/cash-id.png" alt="请填入18位充值卡卡号" width="100%" /><span class="left">请填入18位充值卡卡号:</span></p>
+
+                <p><input type="text" /></p>
+            </form>
+            <div class="choice clearfix">
+                <div class="left clearfix talk">
+                    <img class="no left" src="images/no2.png" alt="未选中" />
+                    <img class="yes left" src="images/yes2.png" alt="选中" />
+                    <span class="left">充值话费</span>
+                </div>
+                <div class="left clearfix liuliang">
+                    <img class="no left" src="images/no2.png" alt="未选中" />
+                    <img class="yes left" src="images/yes2.png" alt="选中" />
+                    <span class="left">充值流量</span>
+                </div>
+            </div>
+            <div class="sep"></div>
+        </div>
+        <!--订单详情-->
+        <div class="dd-details">
+            <div class="top clearfix">
+                <img class="left" src="images/dingdan-details.png" alt="订单详情" />
+                <span class="left">订单详情:</span>
+            </div>
+            <p>尊敬的用户：您于选择银行卡充值话费（自动到账）</p>
+
+            <p>充值手机号码：18612434902</p>
+
+            <p>充值金额：30元</p>
+        </div>
+        <div class="attation">
+            <div class="at-top clearfix"><img class="left" src="images/gantan_icon.png" alt="提示" /><span class="left">温馨提示</span></div>
+            <p>1.仅支持手机上网按流量计费的用户进行充值。</p>
+
+            <p>2.流量仅限充值手机号码使用，有效期自充值之日起90日内有效。</p>
+        </div>
+        <div class="award"><a href="#2" title="刮奖">充值满30元 （充值卡充话费除外）还能刮大奖！>></a></div>
+        <footer><a href="#2">确认充值</a></footer>
+        <img src="images/fixed-bottom.png" alt="" width="100%" style="position:fixed; bottom:0;" />
     </div>
-  </body>
+</div>
+</body>
 </html>

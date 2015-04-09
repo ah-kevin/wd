@@ -13,6 +13,10 @@ header .title{ width:80%; text-align:center; font-size:2em; color:#4c4c4d;}
 .content .public{ width:81.88889%; margin:1.5em auto 0;}
 .content .public p{ width:100%; margin-bottom:1.3em;}
 .content .public p img{ width:6%; margin-top:0.3em; margin-right:0.5em;}
+.content .public p input:focus{
+    border:1px solid #fed04f;
+    border-radius:0.2em;
+}
 .content .public p input{ width:100%; font-size:1em; border:1px solid #4c4c4d; border-radius:0.2em; text-indent:1.5em; padding:0.5em 0;}
 .content .yh-cont .choice{ width:81.88889%; margin:1.5em auto 0;}
 .content .yh-cont .choice div{ position:relative; width:40%;}

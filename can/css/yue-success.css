@@ -2,9 +2,9 @@
 /*outer-box*/
 .outer-box{ width:100%; min-width:320px; margin:0 auto;}
 /*header*/
-header{ width:100%; height:auto; padding:1em 0; background:#ffd140;}
+/*header{ width:100%; height:auto; padding:1em 0; background:#ffd140;}*/
 .return,.personal{ width:7.77778%; margin-left:0.5em;}
-header .title{ width:80%; text-align:center; font-size:2em; color:#4c4c4d;}
+/*header .title{ width:80%; text-align:center; font-size:2em; color:#4c4c4d;}*/
 
 /*content*/
 .content{ width:100%; font-size:1em; color:#4c4c4d;}

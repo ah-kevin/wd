@@ -7,6 +7,7 @@
     <title>预约</title>
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <link rel="stylesheet" type="text/css" href="css/yue.css">
+    <link rel="stylesheet" type="text/css" href="css/nb.css">
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/base.js"></script>
     <script type="text/javascript">
@@ -22,9 +23,21 @@
             $(".content .Value").hide();
             $(".content .shijian").hide();
             $(".content .date img").click(function () {
+                var img = $(this).attr('src');
+                if (img =='images/rili.png') {
+                    $(this).attr('src', 'images/date.png');
+                }else {
+                    $(this).attr('src', 'images/rili.png');
+                };
                 $(".content .Value").toggle();
             });
             $(".content .time img").click(function () {
+                var img = $(this).attr('src');
+                if (img =='images/rili.png') {
+                    $(this).attr('src', 'images/date.png');
+                }else {
+                    $(this).attr('src', 'images/rili.png');
+                };
                 $(".content .shijian").toggle();
             });
         })
@@ -34,11 +47,18 @@
 <body>
 <div class="outer-box">
     <!--head-->
-    <header class="clearfix">
-        <img class="return left" src="images/L-return.png" alt="返回" />
+    <header class="header">
+        <div class="title">
+            <a href="index.html"><span class="back"><img src="images/lcon_back.png" width="58" height="58"></span>
+            </a>
+            <span class="txt">电信微店</span>
+        <span class="info">
+            <a href="admin/cart.html">
+                <img src="images/lcon_head.png" width="52" height="59">
+            </a>
+        </span>
 
-        <div class="title left">电信微店</div>
-        <img class="personal left" src="images/personal.png" alt="个人中心" />
+        </div>
     </header>
     <!--content-->
     <div class="content">
@@ -54,11 +74,11 @@
             <img class="right" src="images/rili.png" alt="日历" />
         </div>
         <div class="Value clearfix">
-            <div class="left" style="border-color: rgb(254, 208, 79);color: rgb(254, 208, 79);background: none;"><span>15日</span><img src="images/checked.png" alt="选择"  style="display: inline"/></div>
+            <div class="left" style="border-color: rgb(254, 208, 79);color: rgb(254, 208, 79);background: none;"><span>15日</span><img src="images/checked.png" alt="选择" style="display: inline" /></div>
             <div class="left mid"><span>16日</span><img src="images/checked.png" alt="选择" /></div>
             <div class="left"><span>17日</span><img src="images/checked.png" alt="选择" /></div>
         </div>
-        <div style=" width:100%; height:1.7em; border-bottom:1px solid #cacaca;"></div>
+        <div style=" width:100%; height:1.4em; border-bottom:1px solid #cacaca;"></div>
         <div class="time clearfix">
             <div class="left">请您选择预约时间：上午9：00-10:00点</div>
             <img class="right" src="images/rili.png" alt="日历" />
@@ -69,7 +89,7 @@
             <div class="left mid"><span>13：00-14：00</span><img src="images/checked.png" alt="选择" /></div>
             <div class="left"><span>14：00-17：00</span><img src="images/checked.png" alt="选择" /></div>
         </div>
-        <div style=" width:100%; height:1.7em; border-bottom:1px solid #cacaca;"></div>
+        <div style=" width:100%; height:1.4em; border-bottom:1px solid #cacaca;"></div>
     </div>
     <!--footer-->
     <footer><a href="order.html">预&nbsp;约</a></footer>

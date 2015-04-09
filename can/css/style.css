@@ -74,7 +74,7 @@ text-indent: 1em;margin-top: 5%;
 .con{width: 100%;margin-top: 5%;}
 .content{ width:88%; font-size:1em; color:#545454; margin:1em auto 0; }
 .content .content-title{ width:96%; padding:0 2% 0;margin-top: 8%; }
-.content .content-title div{ width:10%;width: 1.7em;margin-left: -3%;}
+.content .content-title div{ width:10%;width: 1.7em;margin-left: -3%;margin-top: -2%}
 .content .content-title span{ width:80%; margin-left:1%;
  font-size:1.1em; color:#424242;}
 .left{float:left;}
