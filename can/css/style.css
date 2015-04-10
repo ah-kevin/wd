@@ -33,7 +33,7 @@ font-size: 0.9em;}
 #main .way .text{ text-indent:1em; text-align:left;}
 /* #main .way ul li { width:95%; 
 	border-bottom:1px solid #ddd; margin:0 auto;} */
-#main .way ul .thison2,#main .way ul .thison{
+#main .way ul .thison2,#main .way ul .thison3, #main .way ul .thison4, #main .way ul .thison5{
 	width:100%;border-bottom:1px solid #ddd; margin:0 auto;
 	border-sizing:border-box;
 }	
@@ -41,11 +41,13 @@ font-size: 0.9em;}
 #main .way ul li.thison4 a{ height:50px;}
 #main .way ul li.height a{background:url(../images/ok.png) 95% 50% no-repeat;}
 
-#main .conway{width:85%;height:180px; background:#fff;margin:0px auto;
+#main .conway{width:85%;height:300px; background:#fff;margin:0px auto;
 	border:1px solid #ddd; border-radius:10px;}
 #main .conway ul li.thison{ background:url(../images/yizhifu.jpg) left center no-repeat;}
 #main .conway ul li.thison2{ background:url(../images/zhifubao.jpg) left center no-repeat;}
-#main .conway ul li.thison3{ background: url(../images/weixin.png) left center no-repeat;}
+#main .conway ul li.thison3{ background: url(../images/zhaoshang.png) 6% center no-repeat;}
+#main .conway ul li.thison4{ background: url(../images/nonghang.png) 6% center no-repeat;}
+#main .conway ul li.thison5{ background: url(../images/jianhan.png) 6% center no-repeat;}
 /* ----------预约---------- */
 .pay_tit1{ width: 100%;
 text-indent: 1em;margin-top: 5%;
